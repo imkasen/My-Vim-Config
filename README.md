@@ -4,5 +4,7 @@ A simple vim configuration.
 
 ## Path
 
-* `.vimrc` : `~/.vimrc`
-* `.ideavimrc` : `~/.ideavimrc`
+* `.vimrc` for Vim : `~/.vimrc`
+* `.ideavimrc` for IdeaVim : `~/.ideavimrc`
+* `init.vim` for NeoVim : `~/.config/nvim/init.vim`
+
