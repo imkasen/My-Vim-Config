@@ -10,12 +10,15 @@ set cursorline               " 突出显示光标当前行
 "set cursorcolumn             " 突出显示光标当前列
 set laststatus=2             " 总是显示状态栏
 set ruler                    " 显示光标的位置
+set textwidth=120            " 设置行宽
 set nowrap                   " 超过窗口宽度的行不自动回绕显示
 set autochdir                " 自定切换当前目录为当前文件所在的目录
 set showmatch                " 显示括号匹配
 set showcmd                  " 在屏幕最后一行显示命令
 set showmode                 " 在最后一行提示消息
 set wildmenu                 " Vim 自身命令行模式智能补全
+set t_Co=256                 " 启用 256 色
+set nobackup                 " 不创建备份文件
 
 "" 代码折叠
 set foldmethod=indent        " 基于缩进进行代码折叠
