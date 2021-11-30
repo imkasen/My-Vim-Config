@@ -7,6 +7,8 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'Yggdroot/indentLine'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+    Plug 'jiangmiao/auto-pairs'
+    Plug 'preservim/nerdcommenter'
     Plug 'luochen1990/rainbow'
 call plug#end()
 
@@ -19,19 +21,31 @@ let g:github_variable_style = "NONE"
 colorscheme github_dimmed
 
 " indentLine
-let g:indent_guides_guide_size = 1                      " 指定对齐线尺寸
-let g:indent_guides_start_level = 2                     " 从第二层开始可视化显示缩进
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']       " 为不同的缩进层级设置不同的缩进线
+let g:indent_guides_guide_size = 1                                       " 指定对齐线尺寸
+let g:indent_guides_start_level = 2                                      " 从第二层开始可视化显示缩进
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']                        " 为不同的缩进层级设置不同的缩进线
 
-" vim-airline
+" vim-airline-theme
 let g:airline_theme = 'violet'
-let g:airline_powerline_fonts = 1                       " Powerline 字体支持 
-let g:airline#extensions#tabline#enabled = 1            " 打开 tabline 
+" vim-airline
+let g:airline_powerline_fonts = 1                                        " Powerline 字体支持 
+let g:airline#extensions#tabline#enabled = 1                             " 打开 tabline 
 let g:airline#extensions#tabline#left_sep = ' '       
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline#extensions#whitespace#enable = 0          " 关闭空白符检测
+let g:airline#extensions#whitespace#enable = 0                           " 关闭空白符检测
 let g:airline#entensions#tabline#formatter = 'default'
+
+" nerdcommenter
+let g:NERDCreateDefaultMappings = 1                                      " Create default mappings
+let g:NERDSpaceDelims = 1                                                " Add spaces after comment delimiters by default                     
+let g:NERDCompactSexyComs = 1                                            " Use compact syntax for prettified multi-line comments
+let g:NERDDefaultAlign = 'left'                                          " Align line-wise comment delimiters flush left instead of following code indentation
+" let g:NERDAltDelims_java = 1                                           " Set a language to use its alternate delimiters by default
+" let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }  " Add your own custom formats or override the defaults
+let g:NERDCommentEmptyLines = 1                                          " Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDTrimTrailingWhitespace = 1                                     " Enable trimming of trailing whitespace when uncommenting
+let g:NERDToggleCheckAllLines = 1                                        " Enable NERDCommenterToggle to check all selected lines is commented or not 
 
 " rainbow
 let g:rainbow_active = 1
@@ -57,5 +71,3 @@ let g:rainbow_conf = {
 \		'css': 0,
 \	}
 \}
-
-
