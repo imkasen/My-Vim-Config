@@ -1,7 +1,6 @@
 source ~/.vimrc
 
-" plugins
-" Vim-Plug
+"" vim-plug
 call plug#begin('~/.local/share/nvim/plugged')
     Plug 'projekt0n/github-nvim-theme'
     Plug 'Yggdroot/indentLine'
@@ -12,7 +11,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'luochen1990/rainbow'
 call plug#end()
 
-" theme
+"" github-nvim-theme
 let g:github_comment_style = "NONE"
 let g:github_keyword_style = "NONE"
 let g:github_function_style = "NONE"
@@ -20,14 +19,14 @@ let g:github_variable_style = "NONE"
 " let g:github_transparent = "true"
 colorscheme github_dimmed
 
-" indentLine
+"" indentLine
 let g:indent_guides_guide_size = 1                                       " 指定对齐线尺寸
 let g:indent_guides_start_level = 2                                      " 从第二层开始可视化显示缩进
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']                        " 为不同的缩进层级设置不同的缩进线
 
-" vim-airline-theme
+"" vim-airline-theme
 let g:airline_theme = 'violet'
-" vim-airline
+"" vim-airline
 let g:airline_powerline_fonts = 1                                        " Powerline 字体支持 
 let g:airline#extensions#tabline#enabled = 1                             " 打开 tabline 
 let g:airline#extensions#tabline#left_sep = ' '       
@@ -36,7 +35,7 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#whitespace#enable = 0                           " 关闭空白符检测
 let g:airline#entensions#tabline#formatter = 'default'
 
-" nerdcommenter
+"" nerdcommenter
 let g:NERDCreateDefaultMappings = 1                                      " Create default mappings
 let g:NERDSpaceDelims = 1                                                " Add spaces after comment delimiters by default                     
 let g:NERDCompactSexyComs = 1                                            " Use compact syntax for prettified multi-line comments
@@ -47,7 +46,7 @@ let g:NERDCommentEmptyLines = 1                                          " Allow
 let g:NERDTrimTrailingWhitespace = 1                                     " Enable trimming of trailing whitespace when uncommenting
 let g:NERDToggleCheckAllLines = 1                                        " Enable NERDCommenterToggle to check all selected lines is commented or not 
 
-" rainbow
+"" rainbow
 let g:rainbow_active = 1
 let g:rainbow_conf = {
 \	'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],

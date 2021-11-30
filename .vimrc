@@ -7,7 +7,7 @@ set nocompatible             " 关闭 Vi 兼容模式
 set noerrorbells             " 有错误信息时不响铃
 set history=50               " 历史记录条数
 set cursorline               " 突出显示光标当前行
-"set cursorcolumn             " 突出显示光标当前列
+" set cursorcolumn             " 突出显示光标当前列
 set laststatus=2             " 总是显示状态栏
 set ruler                    " 显示光标的位置
 set textwidth=120            " 设置行宽
@@ -19,9 +19,14 @@ set showmode                 " 在最后一行提示消息
 set wildmenu                 " Vim 自身命令行模式智能补全
 set t_Co=256                 " 启用 256 色
 set nobackup                 " 不创建备份文件
+set noswapfile               " 禁止生成 swap 文件
+set hidden                   " 终端隐藏后不结束
+set lazyredraw               " 延迟绘制，提升性能
+set ffs=unix,dos,mac         " 文件换行符，默认使用 unix 换行符
+set clipboard+=unnamedplus   " 与系统共用剪切板
 
 "" 代码折叠
-set foldmethod=indent        " 基于缩进进行代码折叠
+" set foldmethod=indent        " 基于缩进进行代码折叠
 set foldmethod=syntax        " 基于语法进行代码折叠
 set nofoldenable             " 启动 Vim 时关闭折叠代码
 
@@ -47,9 +52,7 @@ set termencoding=utf-8
 set encoding=utf-8
 
 "" 文件类型设置
-filetype on                  " 打开文件类型检测
-filetype plugin on           " 打开加载文件类型插件
-filetype indent on           " 为不同类型文件定义不同缩进格式
+filetype plugin indent on    " 打开文件类型检测，打开加载文件类型插件，为不同类型文件定义不同缩进格式
 syntax enable                " 开启语法高亮
 syntax on                    " 允许用指定语法高亮配色方案替换默认方案
 
