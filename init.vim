@@ -1,5 +1,5 @@
 "" 载入基本配置
-source base.vim
+source $HOME/My-Vim-Config/base.vim
 
 "" vim-plug
 call plug#begin('~/.local/share/nvim/plugged')
