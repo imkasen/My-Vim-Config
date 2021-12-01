@@ -8,3 +8,5 @@ A simple vim-related configuration for basic file processing.
 * `.vimrc` for Vim : `~/.vimrc`
 * `.ideavimrc` for IdeaVim : `~/.ideavimrc`
 * `init.vim` for NeoVim : `~/.config/nvim/init.vim`
+    * `plugin-list.vim` : vim-plug list
+    * `plugins/` : configuration file for each plugin
