@@ -1,0 +1,2 @@
+"" Nightfox theme
+colorscheme nightfox

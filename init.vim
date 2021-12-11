@@ -15,7 +15,10 @@ call plug#begin('~/.local/share/nvim/plugged')
 call plug#end()
 
 "" github-nvim-theme
-LoadScript plugins/github-nvim-theme.vim
+" LoadScript plugins/github-nvim-theme.vim
+
+"" Nightfox theme
+LoadScript plugins/nightfox.vim
 
 "" indentLine
 LoadScript plugins/indentLine.vim

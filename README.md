@@ -1,6 +1,6 @@
 # My Vim Configuration
 
-A simple vim-related configuration for basic file processing.
+A simple vim-related configuration for basic file editing.
 
 ## Files
 
