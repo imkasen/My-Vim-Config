@@ -1,5 +1,5 @@
 "" 载入基础配置
-source $HOME/My-Vim-Config/config/base.vim
+source $HOME/Vime/config/base.vim
 
 "" 改变光标形状
 " https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes
