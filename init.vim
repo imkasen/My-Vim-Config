@@ -20,6 +20,9 @@ call plug#end()
 "" Nightfox theme
 LoadScript plugins/nightfox.vim
 
+"" coc.nvim
+LoadScript plugins/coc.nvim.vim
+
 "" indentLine
 LoadScript plugins/indentLine.vim
 

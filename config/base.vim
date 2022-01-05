@@ -19,11 +19,14 @@ set showmode                 " 在最后一行提示消息
 set wildmenu                 " Vim 自身命令行模式智能补全
 set t_Co=256                 " 启用 256 色
 set nobackup                 " 不创建备份文件
-set noswapfile               " 禁止生成 swap 文件
+set noswapfile               " 不创建临时交换文件
+set nowritebackup            " 编辑时不创建备份文件
 set hidden                   " 终端隐藏后不结束
 set lazyredraw               " 延迟绘制，提升性能
 set ffs=unix,dos,mac         " 文件换行符，默认使用 unix 换行符
 set clipboard+=unnamedplus   " 与系统共用剪切板
+set cmdheight=2              " 设定命令行行数
+set updatetime=300           " 写入延迟
 
 "" 代码折叠
 " set foldmethod=indent        " 基于缩进进行代码折叠
