@@ -9,6 +9,9 @@ command! -nargs=1 LoadScript exec 'source ' . g:config_root_path . '<args>'
 "" 载入基本配置
 LoadScript base.vim
 
+"" 载入按键映射配置
+LoadScript keymaps.vim
+
 "" vim-plug
 call plug#begin('~/.local/share/nvim/plugged')
     LoadScript plugin-list.vim

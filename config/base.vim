@@ -58,13 +58,3 @@ set encoding=utf-8
 filetype plugin indent on    " 打开文件类型检测，打开加载文件类型插件，为不同类型文件定义不同缩进格式
 syntax enable                " 开启语法高亮
 syntax on                    " 允许用指定语法高亮配色方案替换默认方案
-
-
-"" 按键映射
-let mapleader=" "
-nnoremap H ^
-nnoremap L $
-nnoremap <leader>q :q<CR>
-nnoremap <leader>w :w<CR>
-inoremap jj <Esc>
-

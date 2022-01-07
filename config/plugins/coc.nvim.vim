@@ -1,4 +1,7 @@
 "" coc.nvim
+" use example settings
+" https://github.com/neoclide/coc.nvim#example-vim-configuration
+
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
