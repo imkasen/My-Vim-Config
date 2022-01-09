@@ -27,13 +27,13 @@ LoadScript plugins/nightfox.vim
 LoadScript plugins/coc.nvim.vim
 
 "" indentLine
-LoadScript plugins/indentLine.vim
+" LoadScript plugins/indentLine.vim
 
 "" vim-airline
 LoadScript plugins/vim-airline.vim
 
 "" nerdcommenter
-LoadScript plugins/nerdcommenter.vim
+" LoadScript plugins/nerdcommenter.vim
 
 "" rainbow
 LoadScript plugins/rainbow.vim
