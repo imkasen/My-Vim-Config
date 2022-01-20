@@ -6,7 +6,19 @@ A simple vim-related configuration for basic file editing.
 
 * `.ideavimrc` for IdeaVim : symbolic link to `~/.ideavimrc`
 * `.vimrc` for Vim : symbolic link to `~/.vimrc`
+
+  ``` bash
+  cd
+  ln -s vime/.vimrc .vimrc
+  ```
+
 * `init.vim` for NeoVim : symbolic link to `~/.config/nvim/init.vim`
+
+  ``` bash
+  cd ~/.config/nvim/
+  ln -s ~/vime/init.vim init.vim
+  ```
+
 * `config/`
   * `plugins/` : a configuration file for each plugin
   * `base.vim` : the basic vim configuration

@@ -1,6 +1,6 @@
 "" 载入基础配置
-source $HOME/Vime/config/base.vim
-source $HOME/Vime/config/keymaps.vim
+source $HOME/vime/config/base.vim
+source $HOME/vime/config/keymaps.vim
 
 "" 改变光标形状
 " https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes

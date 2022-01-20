@@ -1,5 +1,5 @@
 "" 全局路径
-let g:dir_name = 'Vime'
+let g:dir_name = 'vime'
 let g:root_path = $HOME . '/' . g:dir_name . '/'
 let g:config_root_path = g:root_path . 'config/'
 
