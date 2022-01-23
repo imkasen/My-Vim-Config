@@ -8,15 +8,13 @@ A simple vim-related configuration for basic file editing.
 * `.vimrc` for Vim : symbolic link to `~/.vimrc`
 
   ``` bash
-  cd
-  ln -s vime/.vimrc .vimrc
+  cd && ln -s vime/.vimrc .vimrc
   ```
 
 * `init.vim` for NeoVim : symbolic link to `~/.config/nvim/init.vim`
 
   ``` bash
-  cd ~/.config/nvim/
-  ln -s ~/vime/init.vim init.vim
+  cd ~/.config/nvim/ && ln -s ~/vime/init.vim init.vim
   ```
 
 * `config/`
