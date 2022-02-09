@@ -2,6 +2,21 @@
 
 A simple vim-related configuration for basic file editing.
 
+## Usage
+
+1. Install [NeoVim](https://github.com/neovim/neovim)
+2. Install Node.js
+3. Install `vime`
+
+   ``` Bash
+   cd && git clone git@github.com:imkasen/vime.git
+   cd ~/.config/ && rm -rf ./nvim/
+   ln -s ~/vime/ ./nvim/
+   ```
+
+4. Install [vim-plug](https://github.com/junegunn/vim-plug)
+5. Install plugins
+
 ## Files
 
 * `.ideavimrc` for IdeaVim : symbolic link to `~/.ideavimrc`
@@ -22,16 +37,6 @@ A simple vim-related configuration for basic file editing.
   * `keymaps.vim` : set key mapping
   * `plugin-list.vim` : the plugin list of vim-plug
 
-## Usage
-
-1. Install [NeoVim](https://github.com/neovim/neovim)
-2. Install Node.js
-3. `git clone git@github.com:imkasen/vime.git`
-4. `cd ~/.config/ && rm -rf ./nvim/`
-5. `ln -s ~/vime/ ./nvim/`
-6. Install [vim-plug](https://github.com/junegunn/vim-plug)
-7. Install plugins
-
 ## Plugins
 
 * themes
@@ -49,3 +54,7 @@ A simple vim-related configuration for basic file editing.
   * ~~[nerdcommenter](https://github.com/preservim/nerdcommenter)~~
   * ~~[vim-cpp-enhanced-highlight](https://github.com/octol/vim-cpp-enhanced-highlight)~~
   * [rainbow](https://github.com/luochen1990/rainbow)
+
+## Reference
+
+* [vime](https://github.com/fgheng/vime)
