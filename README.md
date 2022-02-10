@@ -1,21 +1,28 @@
-# My Vim/NeoVim Configuration
+# My NeoVim/Vim Configuration
 
 A simple vim-related configuration for basic file editing.
 
 ## Usage
 
 1. Install [NeoVim](https://github.com/neovim/neovim)
-2. Install Node.js
-3. Install `vime`
 
    ``` Bash
-   cd && git clone git@github.com:imkasen/vime.git
+   curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+   chmod u+x nvim.appimage
+   sudo mv ~/nvim.appimage /usr/local/bin/nvim
+   ```
+
+2. Install Node.js
+3. Install [nvime](https://github.com/imkasen/nvime)
+
+   ``` Bash
+   cd && git clone git@github.com:imkasen/nvime.git
    cd ~/.config/ && rm -rf ./nvim/
-   ln -s ~/vime/ ./nvim/
+   ln -s ~/nvime ./nvim
    ```
 
 4. Install [vim-plug](https://github.com/junegunn/vim-plug)
-5. Install plugins
+5. Install [plugins](#Plugins)
 
 ## Files
 
@@ -24,7 +31,7 @@ A simple vim-related configuration for basic file editing.
 
   ``` bash
   cd && rm .vimrc
-  ln -s vime/.vimrc .vimrc
+  ln -s nvime/.vimrc .vimrc
   ```
 
 * ~~`init.vim` for NeoVim : symbolic link to `~/.config/nvim/init.vim`~~
