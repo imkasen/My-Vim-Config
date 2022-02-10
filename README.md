@@ -1,6 +1,9 @@
 # My NeoVim/Vim Configuration
 
-A simple vim-related configuration for basic file editing.
+A simple vim-related configuration for basic file editing. ~~（人生苦短，还是用 VS Code 吧）~~
+
+* Vim: set some basic configuration and key bindings
+* NeoVim: add plugins and their settings in addition to the above configuration
 
 ## Usage
 
@@ -9,7 +12,6 @@ A simple vim-related configuration for basic file editing.
    ``` Bash
    curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
    chmod u+x nvim.appimage
-   sudo mv ~/nvim.appimage /usr/local/bin/nvim
    ```
 
 2. Install Node.js
@@ -37,6 +39,7 @@ A simple vim-related configuration for basic file editing.
 * ~~`init.vim` for NeoVim : symbolic link to `~/.config/nvim/init.vim`~~
 
 * `config/` : the root directory of configuration files
+  * `editors/` : contain separate configuration files for each editor
   * `plugins/` : contain separate configuration files for each plugin
   * `themes/` : contain separate configuration files for each theme
   * `args.vim` : set path variables

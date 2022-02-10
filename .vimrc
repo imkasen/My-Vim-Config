@@ -1,20 +1,10 @@
 "" 载入基础配置
-source $HOME/nvime/config/base.vim
-source $HOME/nvime/config/keymaps.vim
+let g:repo_name = 'nvime'
+let g:vim_config_path = $HOME . '/' . g:repo_name . '/config/'
 
-"" 改变光标形状
-" https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes
-if has('unix')
-  " for Gnome-Terminal (version >= 3.16)
-  if has("autocmd")
-    au VimEnter,InsertLeave * silent execute '!echo -ne "\e[1 q"' | redraw!
-    au InsertEnter,InsertChange *
-      \ if v:insertmode == 'i' | 
-      \   silent execute '!echo -ne "\e[5 q"' | redraw! |
-      \ elseif v:insertmode == 'r' |
-      \   silent execute '!echo -ne "\e[3 q"' | redraw! |
-      \ endif
-    au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!
-  endif
-endif
+"" 定义载入配置命令
+command! -nargs=1 LoadScript exec 'source ' . g:vim_config_path . '<args>'
 
+LoadScript base.vim
+LoadScript keymaps.vim
+LoadScript editors/vim.vim
