@@ -26,7 +26,7 @@ A simple vim-related configuration for basic file editing. ~~（人生苦短，�
 4. Install [vim-plug](https://github.com/junegunn/vim-plug)
 5. Install [plugins](#Plugins)
 
-## Files
+## File Structure
 
 * `.ideavimrc` for IdeaVim : symbolic link to `~/.ideavimrc`
 * `.vimrc` for Vim : symbolic link to `~/.vimrc`
@@ -36,12 +36,11 @@ A simple vim-related configuration for basic file editing. ~~（人生苦短，�
   ln -s nvime/.vimrc .vimrc
   ```
 
-* ~~`init.vim` for NeoVim : symbolic link to `~/.config/nvim/init.vim`~~
-
+* `init.vim` for NeoVim : ~~symbolic link to `~/.config/nvim/init.vim`~~
+* `autoload/` : this directory is used for autoloading, some common functions are here.
 * `config/` : the root directory of configuration files
   * `editors/` : contain separate configuration files for each editor
   * `plugins/` : contain separate configuration files for each plugin
-  * `themes/` : contain separate configuration files for each theme
   * `args.vim` : set path variables
   * `base.vim` : a basic configuration for Vim
   * `keymaps.vim` : set key mapping
