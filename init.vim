@@ -18,24 +18,6 @@ call plug#begin('~/.local/share/nvim/plugged')
     LoadScript plugin-list.vim
 call plug#end()
 
-"" 载入主题配置
-" LoadScript plugins/github-nvim-theme.vim
-LoadScript plugins/nightfox.vim
-
-"" coc.nvim
-LoadScript plugins/coc.nvim.vim
-
-"" indentLine
-" LoadScript plugins/indentLine.vim
-
-"" vim-airline
-LoadScript plugins/vim-airline.vim
-
-"" nerdcommenter
-" LoadScript plugins/nerdcommenter.vim
-
-"" rainbow
-LoadScript plugins/rainbow.vim
 
 " 根据插件名字载入对应配置
 function s:source_config(plugName) abort
@@ -46,8 +28,8 @@ function s:source_config(plugName) abort
 endfunction
 
 " 载入插件配置
-"for [plugName, _] in items(g:plugs)
-"    if functions#HasInstall(plugName)
-"        call s:source_config(plugName)
-"    endif
-"endfor
+for [plugName, _] in items(g:plugs)
+    if functions#HasInstall(plugName)
+        call s:source_config(plugName)
+    endif
+endfor

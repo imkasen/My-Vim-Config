@@ -40,7 +40,7 @@ A simple vim-related configuration for basic file editing. ~~（人生苦短，�
 * `autoload/` : this directory is used for autoloading, some common functions are here.
 * `config/` : the root directory of configuration files
   * `editors/` : contain separate configuration files for each editor
-  * `plugins/` : contain separate configuration files for each plugin
+  * `plugins/` : contain separate configuration files for each plugin, files are named as `<plugin_name>.vim`
   * `args.vim` : set path variables
   * `base.vim` : a basic configuration for Vim
   * `keymaps.vim` : set key mapping
@@ -59,6 +59,7 @@ A simple vim-related configuration for basic file editing. ~~（人生苦短，�
     * [coc-highlight](https://github.com/neoclide/coc-highlight)
   * ~~[indentLine](https://github.com/Yggdroot/indentLine)~~
   * [vim-airline](https://github.com/vim-airline/vim-airline)
+  * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
   * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
   * ~~[nerdcommenter](https://github.com/preservim/nerdcommenter)~~
   * ~~[vim-cpp-enhanced-highlight](https://github.com/octol/vim-cpp-enhanced-highlight)~~
