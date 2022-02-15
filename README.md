@@ -14,7 +14,7 @@ A simple vim-related configuration for basic file editing. ~~（人生苦短，�
    chmod u+x nvim.appimage
    ```
 
-2. Install Node.js
+2. Install Node.js (required by `coc.nvim`)
 3. Install [nvime](https://github.com/imkasen/nvime)
 
    ``` Bash
@@ -44,7 +44,7 @@ A simple vim-related configuration for basic file editing. ~~（人生苦短，�
   * `args.vim` : set path variables
   * `base.vim` : a basic configuration for Vim
   * `keymaps.vim` : set key mapping
-  * `plugin-list.vim` : the plugin list of vim-plug
+  * `plugin-list.vim` : the plugin list of `vim-plug`
 
 ## Plugins
 
@@ -55,13 +55,17 @@ A simple vim-related configuration for basic file editing. ~~（人生苦短，�
   * [coc.nvim](https://github.com/neoclide/coc.nvim)
     * [coc-marketplace](https://github.com/fannheyward/coc-marketplace)
     * [coc-clangd](https://github.com/clangd/coc-clangd)
+    * [coc-cmake](https://github.com/voldikss/coc-cmake)
     * [coc-go](https://github.com/josa42/coc-go)
     * [coc-highlight](https://github.com/neoclide/coc-highlight)
+    * [coc-pyright](https://github.com/fannheyward/coc-pyright)
+    * [coc-sh](https://github.com/josa42/coc-sh)
+    * [coc-vimlsp](https://github.com/iamcco/coc-vimlsp)
   * ~~[indentLine](https://github.com/Yggdroot/indentLine)~~
   * [vim-airline](https://github.com/vim-airline/vim-airline)
   * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
   * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
-  * ~~[nerdcommenter](https://github.com/preservim/nerdcommenter)~~
+  * [nerdcommenter](https://github.com/preservim/nerdcommenter)
   * ~~[vim-cpp-enhanced-highlight](https://github.com/octol/vim-cpp-enhanced-highlight)~~
   * [rainbow](https://github.com/luochen1990/rainbow)
 
