@@ -19,3 +19,23 @@ Plug 'vim-airline/vim-airline-themes'
 "" 在 'plugins' 文件夹下无配置文件：
 Plug 'jiangmiao/auto-pairs'
 " Plug 'octol/vim-cpp-enhanced-highlight'
+
+
+"" ===================================
+" coc.nvim 插件列表，可根据需要进行删减
+let g:coc_global_extensions = [
+    \ 'coc-marketplace',
+    \ 'coc-clangd',
+    \ 'coc-cmake',
+    \ 'coc-css',
+    \ 'coc-eslint',
+    \ 'coc-go',
+    \ 'coc-highlight',
+    \ 'coc-json',
+    \ 'coc-pyright',
+    \ 'coc-sh',
+    \ 'coc-vimlsp',
+    \ 'coc-xml',
+    \ 'coc-yaml'
+    \ ]
+

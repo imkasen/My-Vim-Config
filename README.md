@@ -40,6 +40,7 @@ A simple vim-related configuration for basic file editing. ~~（人生苦短，�
 * `autoload/` : this directory is used for autoloading, some common functions are here.
 * `config/` : the root directory of configuration files
   * `editors/` : contain separate configuration files for each editor
+  * `other/` : other configuration files, e.g. `coc-settings.json`
   * `plugins/` : contain separate configuration files for each plugin, files are named as `<plugin_name>.vim`
   * `args.vim` : set path variables
   * `base.vim` : a basic configuration for Vim
@@ -56,11 +57,16 @@ A simple vim-related configuration for basic file editing. ~~（人生苦短，�
     * [coc-marketplace](https://github.com/fannheyward/coc-marketplace)
     * [coc-clangd](https://github.com/clangd/coc-clangd)
     * [coc-cmake](https://github.com/voldikss/coc-cmake)
+    * [coc-css](https://github.com/neoclide/coc-css)
+    * [coc-eslint](https://github.com/neoclide/coc-eslint)
     * [coc-go](https://github.com/josa42/coc-go)
     * [coc-highlight](https://github.com/neoclide/coc-highlight)
+    * [coc-json](https://github.com/neoclide/coc-json)
     * [coc-pyright](https://github.com/fannheyward/coc-pyright)
     * [coc-sh](https://github.com/josa42/coc-sh)
     * [coc-vimlsp](https://github.com/iamcco/coc-vimlsp)
+    * [coc-xml](https://github.com/fannheyward/coc-xml)
+    * [coc-yaml](https://github.com/neoclide/coc-yaml)
   * ~~[indentLine](https://github.com/Yggdroot/indentLine)~~
   * [vim-airline](https://github.com/vim-airline/vim-airline)
   * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)

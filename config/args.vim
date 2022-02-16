@@ -4,4 +4,4 @@ let g:nvim_root_path = fnamemodify($MYVIMRC, ':h') . '/'
 let g:config_root_path = g:nvim_root_path . 'config/'
 "" 插件配置所在目录
 let g:plugins_config_root_path = g:config_root_path . 'plugins/'
-
+let g:other_config_root_path = g:config_root_path . "other/"

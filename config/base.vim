@@ -33,6 +33,7 @@ set clipboard+=unnamedplus   " 与系统共用剪切板
 set cmdheight=2              " 设定命令行行数
 set updatetime=100           " 写入 swap 延迟
 set mouse=n                  " 允许使用鼠标, normal 生效，a 则是全模式生效
+set shortmess+=c             " Don't pass messages to |ins-completion-menu|.
 
 "" 代码折叠
 if has('folding')
