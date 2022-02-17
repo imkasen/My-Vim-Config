@@ -1,4 +1,6 @@
 "" nerdcommenter
+" https://github.com/preservim/nerdcommenter
+
 let g:NERDCreateDefaultMappings = 1                                      " Create default mappings
 let g:NERDSpaceDelims = 1                                                " Add spaces after comment delimiters by default                     
 let g:NERDCompactSexyComs = 1                                            " Use compact syntax for prettified multi-line comments

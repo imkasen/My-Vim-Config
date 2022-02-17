@@ -1,7 +1,29 @@
 "" coc.nvim
+" https://github.com/neoclide/coc.nvim
 
 " coc-settings.json 所在目录
 let g:coc_config_home = g:other_config_root_path
+
+" coc.nvim 插件列表，可根据需要进行删减
+" https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions
+let g:coc_global_extensions = [
+  \ 'coc-marketplace',
+  \ 'coc-clangd',
+  \ 'coc-cmake',
+  \ 'coc-css',
+  \ 'coc-eslint',
+  \ 'coc-go',
+  \ 'coc-highlight',
+  \ 'coc-markdownlint',
+  \ 'coc-json',
+  \ 'coc-pyright',
+  \ 'coc-sh',
+  \ 'coc-vimlsp',
+  \ 'coc-xml',
+  \ 'coc-yaml'
+  \ ]
+
+" ===================================
 
 " example settings: 
 " https://github.com/neoclide/coc.nvim#example-vim-configuration

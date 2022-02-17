@@ -1,4 +1,6 @@
 "" github-nvim-theme
+" https://github.com/projekt0n/github-nvim-theme
+
 let g:github_comment_style = "NONE"
 let g:github_keyword_style = "NONE"
 let g:github_function_style = "NONE"

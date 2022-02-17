@@ -1,4 +1,6 @@
 "" vim-airline
+" https://github.com/vim-airline/vim-airline
+
 let g:airline_powerline_fonts = 1                                        " Powerline 字体支持 
 let g:airline#extensions#tabline#enabled = 1                             " 打开 tabline 
 let g:airline#extensions#tabline#left_sep = ' '       

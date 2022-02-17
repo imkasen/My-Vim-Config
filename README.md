@@ -61,6 +61,7 @@ A simple vim-related configuration for basic file editing. ~~（人生苦短，�
     * [coc-eslint](https://github.com/neoclide/coc-eslint)
     * [coc-go](https://github.com/josa42/coc-go)
     * [coc-highlight](https://github.com/neoclide/coc-highlight)
+    * [coc-markdownlint](https://github.com/fannheyward/coc-markdownlint)
     * [coc-json](https://github.com/neoclide/coc-json)
     * [coc-pyright](https://github.com/fannheyward/coc-pyright)
     * [coc-sh](https://github.com/josa42/coc-sh)
