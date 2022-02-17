@@ -53,12 +53,20 @@ A simple vim-related configuration for basic file editing. ~~（人生苦短，�
   * [nightfox.nvim](https://github.com/EdenEast/nightfox.nvim)
   * ~~[github-nvim-theme](https://github.com/projekt0n/github-nvim-theme)~~
 * plugins
+  * ~~[indentLine](https://github.com/Yggdroot/indentLine)~~
+  * [vim-airline](https://github.com/vim-airline/vim-airline)
+  * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
+  * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
+  * [nerdcommenter](https://github.com/preservim/nerdcommenter)
+  * ~~[vim-cpp-enhanced-highlight](https://github.com/octol/vim-cpp-enhanced-highlight)~~
+  * [rainbow](https://github.com/luochen1990/rainbow)
   * [coc.nvim](https://github.com/neoclide/coc.nvim)
     * [coc-marketplace](https://github.com/fannheyward/coc-marketplace)
     * [coc-clangd](https://github.com/clangd/coc-clangd)
     * [coc-cmake](https://github.com/voldikss/coc-cmake)
     * [coc-css](https://github.com/neoclide/coc-css)
     * [coc-eslint](https://github.com/neoclide/coc-eslint)
+    * [coc-explorer](https://github.com/weirongxu/coc-explorer)
     * [coc-go](https://github.com/josa42/coc-go)
     * [coc-highlight](https://github.com/neoclide/coc-highlight)
     * [coc-markdownlint](https://github.com/fannheyward/coc-markdownlint)
@@ -68,13 +76,6 @@ A simple vim-related configuration for basic file editing. ~~（人生苦短，�
     * [coc-vimlsp](https://github.com/iamcco/coc-vimlsp)
     * [coc-xml](https://github.com/fannheyward/coc-xml)
     * [coc-yaml](https://github.com/neoclide/coc-yaml)
-  * ~~[indentLine](https://github.com/Yggdroot/indentLine)~~
-  * [vim-airline](https://github.com/vim-airline/vim-airline)
-  * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
-  * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
-  * [nerdcommenter](https://github.com/preservim/nerdcommenter)
-  * ~~[vim-cpp-enhanced-highlight](https://github.com/octol/vim-cpp-enhanced-highlight)~~
-  * [rainbow](https://github.com/luochen1990/rainbow)
 
 ## Reference
 

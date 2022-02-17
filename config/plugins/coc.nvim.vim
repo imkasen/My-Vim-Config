@@ -12,6 +12,7 @@ let g:coc_global_extensions = [
   \ 'coc-cmake',
   \ 'coc-css',
   \ 'coc-eslint',
+  \ 'coc-explorer',
   \ 'coc-go',
   \ 'coc-highlight',
   \ 'coc-markdownlint',
@@ -59,3 +60,42 @@ nmap <silent> gd <Plug>(coc-definition)         " 跳转到定义
 nmap <silent> gy <Plug>(coc-type-definition)    " 跳转到类型定义
 nmap <silent> gi <Plug>(coc-implementation)     " 跳转到实现
 nmap <silent> gr <Plug>(coc-references)         " 跳转到引用
+
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  elseif (coc#rpc#ready())
+    call CocActionAsync('doHover')
+  else
+    execute '!' . &keywordprg . " " . expand('<cword>')
+  endif
+endfunction
+
+" Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Symbol renaming.
+nmap <leader>rn <Plug>(coc-rename)
+
+" Formatting selected code.
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
+augroup mygroup
+  autocmd!
+  " Setup formatexpr specified filetype(s).
+  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  " Update signature help on jump placeholder.
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
+
+
+"""""""""""""""""""""""
+" 下面是插件的配置
+"""""""""""""""""""""""
+
+" coc-explorer
+nmap <leader>e : CocCommand explorer<CR>
