@@ -1,6 +1,8 @@
 "" coc.nvim
 " https://github.com/neoclide/coc.nvim
 
+" coc 插件安装目录, 默认路径为 `~/.config/coc/`
+let g:coc_data_home = g:cache_root_path . 'coc/'
 " coc-settings.json 所在目录
 let g:coc_config_home = g:other_config_root_path
 

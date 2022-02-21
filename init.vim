@@ -14,7 +14,7 @@ LoadScript keymaps.vim
 LoadScript editors/nvim.vim
 
 "" vim-plug 载入插件
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin(get(g:, 'plugins_install_path', '~/.local/share/nvim/plugged'))
     LoadScript plugin-list.vim
 call plug#end()
 
