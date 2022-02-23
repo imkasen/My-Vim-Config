@@ -10,7 +10,7 @@ if has('unix')
       \ elseif v:insertmode == 'r' |
       \   silent execute '!echo -ne "\e[3 q"' | redraw! |
       \ endif
-    " au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!  " works well for Gnome-Terminal
-    au VimLeave * silent execute '!echo -ne "\e[5 q"' | redraw!  " works well for Hyper and Gnome-Terminal
+    au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!  " works well for Gnome-Terminal
+    " au VimLeave * silent execute '!echo -ne "\e[5 q"' | redraw!  " works well for Hyper and Gnome-Terminal
   endif
 endif
