@@ -22,8 +22,8 @@ set showmatch                " 显示括号匹配
 set showcmd                  " 在屏幕最后一行显示命令
 set showmode                 " 在最后一行提示消息
 set wildmenu                 " Vim 自身命令行模式智能补全
-" set t_Co=256                 " 启用 256 色
-set termguicolors            " 开启真彩色
+set t_Co=256                 " 启用 256 色
+" set termguicolors            " 开启真彩色
 set nobackup                 " 不创建备份文件
 set noswapfile               " 不创建临时交换文件
 set nowritebackup            " 编辑时不创建备份文件
