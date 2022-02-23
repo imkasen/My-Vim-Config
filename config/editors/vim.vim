@@ -10,6 +10,7 @@ if has('unix')
       \ elseif v:insertmode == 'r' |
       \   silent execute '!echo -ne "\e[3 q"' | redraw! |
       \ endif
-    au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!
+    " au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!
+    au VimLeave * silent execute '!echo -ne "\e[5 q"' | redraw!
   endif
 endif
