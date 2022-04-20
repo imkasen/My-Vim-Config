@@ -26,6 +26,14 @@ let g:coc_global_extensions = [
   \ 'coc-yaml'
   \ ]
 
+"""""""""""""""""""""""
+" 下面是插件的配置
+"""""""""""""""""""""""
+
+" coc-explorer
+nmap <leader>e : CocCommand explorer<CR>
+
+
 " ===================================
 
 " example settings: 
@@ -47,6 +55,13 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+" Use <c-space> to trigger completion.
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
+
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
@@ -67,12 +82,10 @@ nmap <silent> gr <Plug>(coc-references)         " 跳转到引用
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  elseif (coc#rpc#ready())
+  if CocAction('hasProvider', 'hover')
     call CocActionAsync('doHover')
   else
-    execute '!' . &keywordprg . " " . expand('<cword>')
+    call feedkeys('K', 'in')
   endif
 endfunction
 
@@ -95,9 +108,8 @@ augroup mygroup
 augroup end
 
 
-"""""""""""""""""""""""
-" 下面是插件的配置
-"""""""""""""""""""""""
+" Add (Neo)Vim's native statusline support.
+" NOTE: Please see `:h coc-status` for integrations with external plugins that
+" provide custom statusline: lightline.vim, vim-airline.
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
-" coc-explorer
-nmap <leader>e : CocCommand explorer<CR>
