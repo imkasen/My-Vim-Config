@@ -11,8 +11,8 @@ source ~/.vimrc
 
 
 "" 退出
-" inoremap jj <Esc>
-set timeoutlen=200
+" inoremap jk <Esc>
+" set timeoutlen=200
 
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t

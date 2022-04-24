@@ -12,6 +12,7 @@ A simple vim-related configuration for basic file editing. ~~（人生苦短，�
    ``` Bash
    curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
    chmod u+x nvim.appimage
+   sudo mv nvim.appimage /usr/local/bin/nvim
    ```
 
 2. Install Node.js (required by `coc.nvim`)
@@ -28,7 +29,7 @@ A simple vim-related configuration for basic file editing. ~~（人生苦短，�
 
 ## File Structure
 
-* `.ideavimrc` for IdeaVim : symbolic link to `~/.ideavimrc`
+* ~~`.ideavimrc` for IdeaVim : symbolic link to `~/.ideavimrc`~~
 * `.vimrc` for Vim : symbolic link to `~/.vimrc`
 
   ``` bash

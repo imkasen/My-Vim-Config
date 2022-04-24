@@ -4,4 +4,4 @@ nnoremap H ^
 nnoremap L $
 nnoremap <leader>q :q<CR>
 nnoremap <leader>w :w<CR>
-inoremap jj <Esc>
+inoremap jk <Esc>
