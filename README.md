@@ -58,12 +58,13 @@ A simple vim-related configuration for basic file editing. ~~（人生苦短，�
   * [vim-airline](https://github.com/vim-airline/vim-airline)
   * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
   * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
+  * ~~[neoformat](https://github.com/sbdchd/neoformat) : `apt install clang-format`~~
   * [nerdcommenter](https://github.com/preservim/nerdcommenter)
   * ~~[vim-cpp-enhanced-highlight](https://github.com/octol/vim-cpp-enhanced-highlight)~~
   * [rainbow](https://github.com/luochen1990/rainbow)
   * [coc.nvim](https://github.com/neoclide/coc.nvim)
     * [coc-marketplace](https://github.com/fannheyward/coc-marketplace)
-    * [coc-clangd](https://github.com/clangd/coc-clangd)
+    * [coc-clangd](https://github.com/clangd/coc-clangd) : `apt install clangd` or `:CocCommand clangd.install`
     * [coc-cmake](https://github.com/voldikss/coc-cmake)
     * [coc-css](https://github.com/neoclide/coc-css)
     * [coc-eslint](https://github.com/neoclide/coc-eslint)
