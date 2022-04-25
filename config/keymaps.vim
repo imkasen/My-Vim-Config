@@ -1,12 +1,19 @@
 "" 按键映射
-let mapleader=" "         " 空格键作为 leader 键
 
-nnoremap H ^ " 跳到行首
-nnoremap L $ " 跳到行尾
+" 空格键作为 leader 键
+let mapleader=" "
+
+" 跳到行首
+nnoremap H ^
+" 跳到行尾
+nnoremap L $
 
 nnoremap <leader>q :q<CR>   " 退出 Nvim
 nnoremap <leader>qb :bd<CR> " 退出 buffer
 nnoremap <leader>w :w<CR>   " 保存
+
+nnoremap <C-v> <C-w>v " 垂直分割窗口到右侧
+nnoremap <C-s> <C-w>s " 横向分割窗口到下侧
 
 " 光标在分屏间跳转
 nnoremap <C-h> <C-w>h
