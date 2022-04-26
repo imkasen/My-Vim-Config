@@ -25,4 +25,4 @@ nnoremap wl <C-w>l
 nnoremap <A-l> :bnext<CR>
 nnoremap <A-h> :bprevious<CR>
 
-inoremap jk <Esc> " 退出 insert 模式返回到 normal 模式
+inoremap jj <Esc> " 退出 insert 模式返回到 normal 模式
