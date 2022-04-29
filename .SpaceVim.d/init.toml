@@ -1,4 +1,6 @@
 # https://spacevim.org/cn/documentation
+
+# ============================================================================================
 # 所有的 SpaceVim 选项都列在 [options] 之下
 [options]
     # 设置 SpaceVim 主题及背景，默认主题模块不加载，如果你需要使用更
@@ -10,54 +12,163 @@
     # 一小部分终端不支持真色，如果你的 SpaceVim 颜色看上去比较怪异
     # 可以禁用终端真色，将下面的值设为 false
     enable_guicolors = true
-    # 设置状态栏上分割符号形状，如果字体安装失败，可以将值设为 "nil" 以
-    # 禁用分割符号，默认为箭头 "arrow"
+    # 显示/隐藏顶部标签栏上的文件类型图标，这一图标需要安装 nerd fonts，
+    # 如果未能成功安装这一字体，可以隐藏图标
+    enable_tabline_filetype_icon = true
+    # 设置文件树在左侧
+    filetree_direction = "left"
+    # 默认缩进
+    default_indent = 4
+    # 帮助文件语言
+    vim_help_language = "cn"
+
+    # options for statusline
+    # https://spacevim.org/cn/documentation/#%E7%8A%B6%E6%80%81%E6%A0%8F
+    # 设置状态栏上分割符号形状，如果字体安装失败，可以将值设为 "nil" 以禁用分割符号，
+    # 分割符包括以下几种 "arrow", "curve", "slant", "fire", "nil"，默认为箭头 "arrow"
+    # 设置活动窗口状态栏上的分割符号形状
     statusline_separator = "arrow"
-    statusline_iseparator = "arrow"
+    # 设置非活动窗口状态栏上的分割符号形状
+    statusline_iseparator = "nil"
     # 设置顶部标签列表序号类型，有以下五种类型，分别是 0 - 4
     # 0: 1 ➛ ➊
     # 1: 1 ➛ ➀
     # 2: 1 ➛ ⓵
     # 3: 1 ➛ ¹
     # 4: 1 ➛ 1
-    buffer_index_type = 1
-    # 显示/隐藏顶部标签栏上的文件类型图标，这一图标需要安装 nerd fonts，
-    # 如果未能成功安装这一字体，可以隐藏图标
-    enable_tabline_filetype_icon = true
-    # 是否在状态栏上显示当前模式，默认情况下，不显示 Normal/Insert 等
-    # 字样，只以颜色区分当前模式
+    buffer_index_type = 1 
+    # 是否在状态栏上显示当前模式，默认情况下，不显示 Normal/Insert 等字样，只以颜色区分当前模式
     enable_statusline_mode = true
-    # 设置文件树在左侧
-    filetree_direction = "left"
-    # 默认缩进
-    default_indent = 4
 
-# -------------------------------------
-# SpaceVim 模块设置，主要包括启用/禁用模块
 
-# colorscheme 模块：https://spacevim.org/cn/layers/colorscheme/
+# ============================================================================================
+# SpaceVim 模块设置
+# https://spacevim.org/cn/layers/
+
+# colorscheme: https://spacevim.org/cn/layers/colorscheme/
 [[layers]]
     name = "colorscheme"
 
-# ui 模块：https://spacevim.org/cn/layers/ui/
+# ui: https://spacevim.org/cn/layers/ui/
 [[layers]]
     name = "ui"
     enable_sidebar = true
     enable_scrollbar = true
     enable_indentline = false
 
-# autocomplete 模块：https://spacevim.org/cn/layers/autocomplete/
+# autocomplete: https://spacevim.org/cn/layers/autocomplete/
 [[layers]]
     name = "autocomplete"
     auto_completion_return_key_behavior = "complete"
-    auto_completion_tab_key_behavior = "smart"
+    auto_completion_tab_key_behavior = "cycle"
 
+# shell: https://spacevim.org/cn/layers/shell/
 [[layers]]
     name = "shell"
     default_position = 'top'
     default_height = 30
 
+# Vim 中文帮助文档：https://spacevim.org/cn/layers/chinese/
+[[layers]]
+    name = "chinese"
+
+# lsp: https://spacevim.org/cn/layers/language-server-protocol/
+[[layers]]
+    name = "lsp"
+    enabled_clients = ["clangd", "pyright"]
+    filetypes = [
+        "cpp",
+        "python",
+    ]
+    [layers.override_cmd]
+        cpp = ["clangd"]
+        python = ["pyright"]
+
+
 # -------------------------------------
+# 编程语言支持：
+# Assembly: https://spacevim.org/cn/layers/lang/assembly/
+# [[layers]]
+    # name = "lang#assembly"
+
+# C++: https://spacevim.org/cn/layers/lang/c/
+[[layers]]
+    name = "lang#c"
+    enable_clang_syntax_highlight = true
+    clang_executable = "/usr/bin/clang"
+    [layer.clang_std]
+        cpp = "c++17"
+
+# dockerfile: https://spacevim.org/cn/layers/lang/dockerfile/
+# [[layers]]
+#     name = "lang#dockerfile"
+
+# go: https://spacevim.org/cn/layers/lang/go/
+[[layers]]
+    name = "lang#go"
+
+# html: https://spacevim.org/cn/layers/lang/html/
+# [[layers]]
+#     name = "lang#html"
+
+# jupyter notebook: https://spacevim.org/cn/layers/lang/ipynb/
+# [[layers]]
+#     name = "lang#ipynb"
+
+# javascript: https://spacevim.org/cn/layers/lang/javascript/
+# [[layers]]
+#     name = "lang#javascript"
+
+# lua: https://spacevim.org/cn/layers/lang/lua/
+# [[layers]]
+#     name = "lang#lua"
+
+# markdown: https://spacevim.org/cn/layers/lang/markdown/
+# [[layers]]
+#     name = "lang#markdown"
+
+# python: https://spacevim.org/cn/layers/lang/python/
+[[layers]]
+    name = "lang#python"
+    format_on_save = true
+    enable_typeinfo = true
+    python_interpreter = "/usr/bin/python3"
+    enable_linters = ['python', 'pylint']
+    python_file_head = [
+        '#!/usr/bin/env python3',
+        '',
+    ]
+
+# rust: https://spacevim.org/cn/layers/lang/rust/
+# [[layers]]
+#     name = "lang#rust"
+
+# shell script: https://spacevim.org/cn/layers/lang/sh/
+# [[layers]]
+#     name = "lang#sh"
+
+# toml: https://spacevim.org/cn/layers/lang/toml/
+# [[layers]]
+#     name = "lang#toml"
+
+# typescript: https://spacevim.org/cn/layers/lang/typescript/
+# [[layers]]
+#     name = "lang#typescript"
+
+# vimscript: https://spacevim.org/cn/layers/lang/vim/
+# [[layers]]
+#   name = "lang#vim"
+
+# vue: https://spacevim.org/cn/layers/lang/vue/
+# [[layers]]
+#     name = "lang#vue"
+
+# xml: https://spacevim.org/cn/layers/lang/xml/
+# [[layers]]
+#     name = "lang#xml"
+
+
+# ============================================================================================
 # SpaceVim 自定义插件
 
 # 自定义主题：https://github.com/EdenEast/nightfox.nvim

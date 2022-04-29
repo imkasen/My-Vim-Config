@@ -16,6 +16,7 @@
 
    ``` Bash
    cd && git clone git@github.com:imkasen/nvime.git
+   rm -rf ~/.SpaceVim.d
    ln -s ~/nvime/.SpaceVim.d .SpaceVim.d
    ```
 
@@ -25,11 +26,21 @@
    curl -sLf https://spacevim.org/cn/install.sh | bash
    ```
 
-4. 检查依赖
+4. 安装依赖
 
-   ``` Bash
-   sudo apt install xsel
-   sudo apt install lua5.3
-   pip3 install pynvim
-   npm install -g neovim
-   ```
+   * NeoVim/SpaceVim: `:checkhealth`
+     * Install Node.js
+       * `npm install -g neovim`
+     * `pip3 install pynvim`
+     * `sudo apt install lua5.3`
+     * Clipboard: `sudo apt install xsel`
+   * C++
+     * `sudo apt install clang`
+     * `sudo apt install clangd`
+   * Python
+     * 语法检查：`pip3 install --user flake8`
+     * 语法检查：`pip3 install --user pylint`
+     * 包管理：`pip3 install --user isort`
+     * 包管理：`pip3 install --user autoflake`
+     * 格式化：`pip3 install --user yapf`
+     * LSP：`npm install -g pyright`
