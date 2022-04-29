@@ -23,7 +23,7 @@
 3. 安装 [SpaceVim](https://spacevim.org/cn/)
 
    ``` Bash
-   curl -sLf https://spacevim.org/cn/install.sh | bash
+   curl -sLf https://spacevim.org/cn/install.sh | bash -s -- --install neovim
    ```
 
 ### 安装依赖
@@ -35,12 +35,11 @@
   * `sudo apt install lua5.3`
   * Clipboard: `sudo apt install xsel`
 * C++
-  * `sudo apt install clang`
-  * `sudo apt install clangd`
+  * `sudo apt install clang clangd`
 * Python
-  * 语法检查：`pip3 install --user flake8`
-  * 语法检查：`pip3 install --user pylint`
-  * 包管理：`pip3 install --user isort`
-  * 包管理：`pip3 install --user autoflake`
+  * 语法检查
+    * `pip3 install --user flake8 pylint`
+  * 包管理
+    * `pip3 install --user isort autoflake`
   * 格式化：`pip3 install --user yapf`
   * LSP：`npm install -g pyright`
