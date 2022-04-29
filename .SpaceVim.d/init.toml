@@ -2,7 +2,12 @@
 
 # ============================================================================================
 # 所有的 SpaceVim 选项都列在 [options] 之下
+# 配置项查询：`:help Spacevim-config@en` 或者查看 `~/.SpaceVim/autoload/SpaceVim.vim`
 [options]
+    # 启动函数
+    bootstrap_before = "myspacevim#before"
+    # bootstrap_after  = "myspacevim#after"
+
     # 设置 SpaceVim 主题及背景，默认主题模块不加载，如果你需要使用更
     # 多的主题，你可以载入 colorscheme 模块
     colorscheme = "onedark"
@@ -21,6 +26,12 @@
     default_indent = 4
     # 帮助文件语言
     vim_help_language = "cn"
+    # 相对行号
+    relativenumber = false
+    # 退出 insert 模式
+    escape_key_binding = "jj"
+    # sidebar width
+    sidebar_width = 20
 
     # options for statusline
     # https://spacevim.org/cn/documentation/#%E7%8A%B6%E6%80%81%E6%A0%8F
