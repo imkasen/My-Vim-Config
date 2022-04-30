@@ -5,6 +5,6 @@ let g:vim_config_path = $HOME . '/' . g:repo_name . '/config/'
 "" 定义载入配置命令
 command! -nargs=1 LoadScript exec 'source ' . g:vim_config_path . '<args>'
 
-LoadScript base.vim
+LoadScript options.vim
 LoadScript keymaps.vim
 LoadScript editors/vim.vim

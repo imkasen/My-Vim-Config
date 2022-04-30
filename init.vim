@@ -5,7 +5,7 @@ exec "source " . fnamemodify($MYVIMRC, ':h') . "/config/args.vim"
 command! -nargs=1 LoadScript exec 'source ' . g:config_root_path . '<args>'
 
 "" 载入基本配置
-LoadScript base.vim
+LoadScript options.vim
 
 "" 载入按键映射配置
 LoadScript keymaps.vim
