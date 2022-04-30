@@ -1,5 +1,11 @@
 # SpaceVim Configuration with NeoVim
 
+> 当前版本：2.0.0-dev
+>
+> SpaceVim 体验了两天，体验非常不好。最糟糕的点在于文档的混乱，官方网站的中文、英文文档很多地方都有矛盾，程序内查询的手册又有很多与网站文档相出入的地方。这样混乱的文档导致每次想要更改一个插件往往要耗费大量的时间去搜索解决各种问题，因为官方文档的操作不具备可行性。如此一来就距离所谓的开箱即用，不折腾相差甚远。
+>
+> 所以，**结论是建议直接去学习配置 NeoVim。**
+
 一些 SpaceVim 相关的配置。
 
 ## 安装
@@ -31,7 +37,7 @@
 * NeoVim/SpaceVim: `:checkhealth`
   * Install Node.js
     * `npm install -g neovim`
-  * `pip3 install pynvim`
+  * `pip3 install --user pynvim`
   * `sudo apt install lua5.3`
   * Clipboard: `sudo apt install xsel`
 * C++

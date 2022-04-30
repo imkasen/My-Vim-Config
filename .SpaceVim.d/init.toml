@@ -2,7 +2,7 @@
 
 # ============================================================================================
 # 所有的 SpaceVim 选项都列在 [options] 之下
-# 配置项查询：`:help Spacevim-config@en` 或者查看 `~/.SpaceVim/autoload/SpaceVim.vim`
+# 配置项查询：`:help SpaceVim-options@en` 或者查看 `~/.SpaceVim/autoload/SpaceVim.vim`
 [options]
     # 启动函数
     bootstrap_before = "myspacevim#before"
@@ -20,6 +20,8 @@
     # 显示/隐藏顶部标签栏上的文件类型图标，这一图标需要安装 nerd fonts，
     # 如果未能成功安装这一字体，可以隐藏图标
     enable_tabline_filetype_icon = true
+    # 默认关闭文件树
+    enable_vimfiler_welcome = false
     # 设置文件树在左侧
     filetree_direction = "left"
     # 默认缩进
@@ -79,6 +81,14 @@
     default_position = 'top'
     default_height = 30
 
+# git: https://spacevim.org/cn/layers/git/
+[[layers]]
+    name = "git"
+
+# version control: https://spacevim.org/cn/layers/VersionControl/
+[[layers]]
+    name = "VersionControl"
+
 # Vim 中文帮助文档：https://spacevim.org/cn/layers/chinese/
 [[layers]]
     name = "chinese"
@@ -87,7 +97,13 @@
 # https://microsoft.github.io/language-server-protocol/implementors/servers/
 [[layers]]
     name = "lsp"
-    enabled_clients = ["clangd", "pyright", "bashls", "tsserver", "vimls"]
+    enabled_clients = [
+        "clangd", 
+        "pyright", 
+        "bashls", 
+        "tsserver", 
+        "vimls",
+    ]
     filetypes = [
         "cpp",
         "javascript",
@@ -126,6 +142,8 @@
 # go: https://spacevim.org/cn/layers/lang/go/
 # [[layers]]
 #     name = "lang#go"
+#     format_on_save = true
+#     go_file_head = []
 
 # html: https://spacevim.org/cn/layers/lang/html/
 # [[layers]]
@@ -140,9 +158,13 @@
     name = "lang#javascript"
     auto_fix = true
 
+[[layers]]
+    name = "lang#json"
+
 # lua: https://spacevim.org/cn/layers/lang/lua/
 [[layers]]
     name = "lang#lua"
+    format_on_save = true
 
 # markdown: https://spacevim.org/cn/layers/lang/markdown/
 # [[layers]]
@@ -195,4 +217,4 @@
 # 自定义主题：https://github.com/EdenEast/nightfox.nvim
 # [[custom_plugins]]
 #    repo = "EdenEast/nightfox.nvim"
-#    merged = 0
+#    merged = false
