@@ -115,8 +115,8 @@
 #     name = "lang#dockerfile"
 
 # go: https://spacevim.org/cn/layers/lang/go/
-[[layers]]
-    name = "lang#go"
+# [[layers]]
+#     name = "lang#go"
 
 # html: https://spacevim.org/cn/layers/lang/html/
 # [[layers]]

@@ -43,3 +43,12 @@
     * `pip3 install --user isort autoflake`
   * 格式化：`pip3 install --user yapf`
   * LSP：`npm install -g pyright`
+
+### Vim
+
+Vim 只设置快捷键和基本配置。
+
+``` Bash
+cd && rm .vimrc
+ln -s ~/nvime/vimconfig/.vimrc .vimrc
+```

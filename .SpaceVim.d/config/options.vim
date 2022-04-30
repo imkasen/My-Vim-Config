@@ -10,7 +10,7 @@ set noerrorbells           " 有错误信息时不响铃
 set ffs=unix,dos,mac       " 文件换行符，默认使用 unix 换行符
 set hidden                 " 终端隐藏后不结束
 set history=50             " 历史记录条数
-set lazyredraw             " 延迟绘制，提升性能
+"  set lazyredraw             " 延迟绘制，提升性能
 set mouse=n                " 允许使用鼠标, normal 生效，a 则是全模式生效
 set pumheight=10           " 补全最多显示 10 行
 set shortmess+=c           " Don't pass messages to |ins-completion-menu|

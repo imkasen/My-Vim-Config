@@ -11,11 +11,7 @@ function! myspacevim#before() abort
     " 加载配置
     LoadScript options.vim
     LoadScript keymaps.vim
-    if has('nvim')
-        LoadScript editors/nvim.vim
-    elseif has('vim')
-        LoadScript editors/vim.vim
-    endif
+    LoadScript nvim.vim
 
 endfunction
 
