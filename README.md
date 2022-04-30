@@ -43,6 +43,12 @@
     * `pip3 install --user isort autoflake`
   * 格式化：`pip3 install --user yapf`
   * LSP：`npm install -g pyright`
+* sh
+  * `npm install -g bash-language-server`
+* JavaScript, TypeScript
+  * `npm install -g typescript-language-server eslint`
+* Vim
+  * `npm install -g vim-language-server`
 
 ### Vim
 

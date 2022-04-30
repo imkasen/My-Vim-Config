@@ -83,17 +83,26 @@
 [[layers]]
     name = "chinese"
 
-# lsp: https://spacevim.org/cn/layers/language-server-protocol/
+# LSP: https://spacevim.org/cn/layers/language-server-protocol/
+# https://microsoft.github.io/language-server-protocol/implementors/servers/
 [[layers]]
     name = "lsp"
-    enabled_clients = ["clangd", "pyright"]
+    enabled_clients = ["clangd", "pyright", "bashls", "tsserver", "vimls"]
     filetypes = [
         "cpp",
+        "javascript",
         "python",
+        "sh",
+        "typescript",
+        "vim",
     ]
     [layers.override_cmd]
         cpp = ["clangd"]
+        javascript = ["typescript-language-server", "--stdio"]
         python = ["pyright"]
+        sh = ["bash-language-server", "start"]
+        typescript = ["typescript-language-server", "--stdio"]
+        vim = ["vim-language-server", "--stdio"]
 
 
 # -------------------------------------
@@ -127,12 +136,13 @@
 #     name = "lang#ipynb"
 
 # javascript: https://spacevim.org/cn/layers/lang/javascript/
-# [[layers]]
-#     name = "lang#javascript"
+[[layers]]
+    name = "lang#javascript"
+    auto_fix = true
 
 # lua: https://spacevim.org/cn/layers/lang/lua/
-# [[layers]]
-#     name = "lang#lua"
+[[layers]]
+    name = "lang#lua"
 
 # markdown: https://spacevim.org/cn/layers/lang/markdown/
 # [[layers]]
@@ -155,28 +165,28 @@
 #     name = "lang#rust"
 
 # shell script: https://spacevim.org/cn/layers/lang/sh/
-# [[layers]]
-#     name = "lang#sh"
+[[layers]]
+    name = "lang#sh"
 
 # toml: https://spacevim.org/cn/layers/lang/toml/
-# [[layers]]
-#     name = "lang#toml"
+[[layers]]
+    name = "lang#toml"
 
 # typescript: https://spacevim.org/cn/layers/lang/typescript/
-# [[layers]]
-#     name = "lang#typescript"
+[[layers]]
+    name = "lang#typescript"
 
 # vimscript: https://spacevim.org/cn/layers/lang/vim/
-# [[layers]]
-#   name = "lang#vim"
+[[layers]]
+  name = "lang#vim"
 
 # vue: https://spacevim.org/cn/layers/lang/vue/
 # [[layers]]
 #     name = "lang#vue"
 
 # xml: https://spacevim.org/cn/layers/lang/xml/
-# [[layers]]
-#     name = "lang#xml"
+[[layers]]
+    name = "lang#xml"
 
 
 # ============================================================================================
