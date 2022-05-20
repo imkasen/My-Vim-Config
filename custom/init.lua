@@ -1,0 +1,1 @@
+-- load globals, autocmds here or anything .__.
