@@ -6,7 +6,7 @@ end
 
 M.general = {
     i = {
-        ["jj"] = { "<ESC>", "   escape insert mode" },
+        ["jk"] = { "<ESC>", "   escape insert mode" },
     },
 
     n = {
@@ -15,7 +15,7 @@ M.general = {
     },
 
     t = {
-        ["jj"] = { termcodes "<C-\\><C-N>", "   escape terminal mode" },
+        ["jk"] = { termcodes "<C-\\><C-N>", "   escape terminal mode" },
     },
 }
 
