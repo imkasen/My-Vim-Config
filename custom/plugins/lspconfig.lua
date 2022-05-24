@@ -1,5 +1,6 @@
 -- https://github.com/neovim/nvim-lspconfig
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+-- https://github.com/williamboman/nvim-lsp-installer
 
 local M = {}
 
@@ -15,9 +16,12 @@ M.setup_lsp = function(attach, capabilities)
         "dockerls",
         "gopls",
         "html",
+        "jsonls",
         "pyright",
+        "sumneko_lua",
         "tsserver",
         "vimls",
+        "yamlls",
      }
 
     for _, lsp in ipairs(servers) do

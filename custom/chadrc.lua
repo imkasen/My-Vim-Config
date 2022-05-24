@@ -14,9 +14,15 @@ M.options = {
 
 M.plugins = {
 
-    -- lsp
     options = {
-        setup_lspconf = "custom.plugins.lspconfig",
+        -- lsp
+        lspconfig = {
+            setup_lspconf = "custom.plugins.lspconfig",
+        },
+
+        statusline = {
+            separator_style = "arrow",
+        },
     },
 
     -- override default config of a plugin
