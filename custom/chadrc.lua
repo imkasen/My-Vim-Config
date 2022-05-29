@@ -2,7 +2,6 @@
 
 local M = {}
 
-local override = require "custom.override"
 local userPlugins = require "custom.plugins"
 
 M.options = {
@@ -27,7 +26,7 @@ M.plugins = {
 
     -- override default config of a plugin
     override = {
-        ["nvim-treesitter/nvim-treesitter"] = override.treesitter,
+        ["nvim-treesitter/nvim-treesitter"] = "custom.override.treesitter",
     },
 
     -- add plugins
