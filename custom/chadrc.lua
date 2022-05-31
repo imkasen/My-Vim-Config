@@ -2,8 +2,6 @@
 
 local M = {}
 
-local userPlugins = require "custom.plugins"
-
 M.options = {
     -- change default options
     user = function ()
@@ -30,7 +28,7 @@ M.plugins = {
     },
 
     -- add plugins
-    user = userPlugins
+    user = require "custom.plugins"
 }
 
 -- customize mappings
