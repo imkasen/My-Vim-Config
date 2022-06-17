@@ -4,6 +4,8 @@ NvChad 自定义配置。
 
 ## 安装
 
+### NeoVim
+
 1. 下载 [NeoVim](https://github.com/neovim/neovim)
 
    ``` Bash
@@ -27,6 +29,15 @@ NvChad 自定义配置。
    ```
 
 4. 下载 Nerd Font 和 *[ripgrep](https://github.com/BurntSushi/ripgrep)
+
+### Vimrc
+
+1. 同上，下载 `nvime`
+
+   ``` Bash
+   cd && rm .vimrc
+   ln -s nvime/.vimrc .vimrc
+   ```
 
 ## 参考
 
