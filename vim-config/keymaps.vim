@@ -14,7 +14,10 @@ nnoremap L $
 
 " 保存
 nnoremap <C-s> :w<CR>
+" 打开终端
 nnoremap <leader>h :term<CR>
+" 删除选中部分
+vnoremap <Backspace> x
 
 " 插入模式移动光标
 inoremap <C-h> <Left>
