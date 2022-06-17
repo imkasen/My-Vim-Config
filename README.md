@@ -30,13 +30,22 @@ NvChad 自定义配置。
 
 4. 下载 Nerd Font 和 *[ripgrep](https://github.com/BurntSushi/ripgrep)
 
-### Vimrc
+### Vim
 
 1. 同上，下载 `nvime`
 
    ``` Bash
    cd && rm .vimrc
    ln -s nvime/.vimrc .vimrc
+   ```
+
+### IdeaVim
+
+1. 同上，下载 `nvime`
+
+   ``` Bash
+   cd && rm .ideavimrc
+   ln -s nvime/.ideavimrc .ideavimrc
    ```
 
 ## 参考

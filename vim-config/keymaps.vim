@@ -14,6 +14,7 @@ nnoremap L $
 
 " 保存
 nnoremap <C-s> :w<CR>
+nnoremap <leader>h :term<CR>
 
 " 插入模式移动光标
 inoremap <C-h> <Left>

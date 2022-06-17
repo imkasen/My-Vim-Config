@@ -54,8 +54,8 @@ set smartcase                " 智能搜索
 "" Tab 键与缩进配置
 set expandtab                " Tab 转空格
 set smarttab                 " 使用 shiftwidth
-set shiftwidth=2             " 设置自动缩进长度
-set softtabstop=2            " 使得按退格键时可以一次删掉的空格数
+set shiftwidth=4             " 设置自动缩进长度
+set softtabstop=4            " 使得按退格键时可以一次删掉的空格数
 set tabstop=8                " 设定 tab 缩进空格数
 set autoindent               " 新增行与前一行具有相同缩进形式
 set smartindent              " 类似 cindent
