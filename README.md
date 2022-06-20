@@ -39,15 +39,6 @@ NvChad 自定义配置。
    ln -s nvime/.vimrc .vimrc
    ```
 
-### IdeaVim
-
-1. 同上，下载 `nvime`
-
-   ``` Bash
-   cd && rm .ideavimrc
-   ln -s nvime/.ideavimrc .ideavimrc
-   ```
-
 ## 参考
 
 * [NvChad](https://github.com/NvChad/NvChad)
