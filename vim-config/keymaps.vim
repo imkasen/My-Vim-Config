@@ -25,6 +25,9 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 
+inoremap <C-b> <Esc>^i
+inoremap <C-e> <End>
+
 " 光标在分屏间跳转
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
