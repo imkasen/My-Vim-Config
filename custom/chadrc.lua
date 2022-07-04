@@ -1,10 +1,11 @@
 -- make sure to maintain the structure of `core/default_config.lua` here
-
 local M = {}
+
+local override = require "custom.override"
 
 M.options = {
     -- change default options
-    user = function ()
+    user = function()
         require "custom.options"
     end
 }
@@ -24,7 +25,7 @@ M.plugins = {
 
     -- override default config of a plugin
     override = {
-        ["nvim-treesitter/nvim-treesitter"] = "custom.override.treesitter",
+        ["nvim-treesitter/nvim-treesitter"] = override.treesitter,
     },
 
     -- add plugins

@@ -31,12 +31,13 @@ M.setup_lsp = function(attach, capabilities)
         "vimls",
         -- "vuels",
         "yamlls",
-     }
+    }
 
     for _, lsp in ipairs(servers) do
         lspconfig[lsp].setup {
             on_attach = attach,
             capabilities = capabilities,
+            root_dir = vim.loop.cwd,
         }
     end
 end
