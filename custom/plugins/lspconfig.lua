@@ -9,19 +9,16 @@ M.setup_lsp = function(attach, capabilities)
 
     -- lspservers with default config
     local servers = {
-        -- "awk_ls",
         "bashls",
         "clangd",
         "cmake",
         "cssls",
-        -- "cssmodules_ls",
         "dockerls",
         -- "dotls",
-        -- "eslint",
+        "eslint",
         "gopls",
         "html",
         "jsonls",
-        -- "perlls",
         "pyright",
         -- "rust_analyzer",
         -- "sqlls",

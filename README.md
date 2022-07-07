@@ -42,3 +42,4 @@ NvChad 自定义配置。
 ## 参考
 
 * [NvChad](https://github.com/NvChad/NvChad)
+* [siduck/dotfiles](https://github.com/siduck/dotfiles/tree/master/nvchad/custom)

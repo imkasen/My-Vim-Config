@@ -26,6 +26,7 @@ M.plugins = {
     -- override default config of a plugin
     override = {
         ["nvim-treesitter/nvim-treesitter"] = override.treesitter,
+        ["kyazdani42/nvim-tree.lua"] = override.nvimtree,
     },
 
     -- add plugins

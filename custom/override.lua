@@ -8,25 +8,19 @@ M.treesitter = {
         "bash",
         "c",
         "cmake",
-        -- "comment",
         "cpp",
         "css",
-        -- "dockerfile",
+        "dockerfile",
         -- "dot",
         "go",
-        -- "gomod",
-        -- "help",
+        "gomod",
         "html",
-        -- "http",
-        -- "java",
         "javascript",
         "json",
         -- "llvm",
         "lua",
         "make",
         "markdown",
-        -- "perl",
-        -- "php",
         "python",
         "regex",
         -- "rust",
@@ -36,6 +30,21 @@ M.treesitter = {
         "vim",
         -- "vue",
         "yaml",
+    },
+}
+
+M.nvimtree = {
+    git = {
+        enable = true,
+    },
+
+    renderer = {
+        highlight_git = true,
+        icons = {
+            show = {
+                git = true,
+            },
+        },
     },
 }
 
