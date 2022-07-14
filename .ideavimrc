@@ -1,8 +1,16 @@
 "" Source your .vimrc
-" source ~/.vimrc
 
 source ~/nvime/vim-config/keymaps.vim
 source ~/nvime/vim-config/options.vim
+
+"" =======================================================
+
+"" https://github.com/JetBrains/ideavim/wiki/NERDTree-support
+set NERDTree
+nnoremap <Leader>e :NERDTree<CR>
+
+"" https://github.com/JetBrains/ideavim/wiki/Emulated-plugins#commentary=
+set commentary
 
 "" =======================================================
 
