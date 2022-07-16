@@ -17,16 +17,17 @@ M.plugins = {
         lspconfig = {
             setup_lspconf = "custom.plugins.lspconfig",
         },
-
-        statusline = {
-            separator_style = "arrow",
-        },
     },
 
     -- override default config of a plugin
     override = {
         ["nvim-treesitter/nvim-treesitter"] = override.treesitter,
         ["kyazdani42/nvim-tree.lua"] = override.nvimtree,
+        ["NvChad/ui"] = {
+            statusline = {
+                separator_style = "arrow", -- default/round/block/arrow
+            },
+        },
     },
 
     -- add plugins
