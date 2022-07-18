@@ -11,23 +11,23 @@ local b = null_ls.builtins
 local sources = {
     -- formatting
     b.formatting.clang_format, -- cpp
-    b.formatting.cmake_format, -- cmake
-    b.formatting.gofmt, -- go
-    b.formatting.goimports, -- go import modules
-    b.formatting.markdownlint, -- markdown
+    -- b.formatting.cmake_format, -- cmake
+    -- b.formatting.gofmt, -- go
+    -- b.formatting.goimports, -- go import modules
+    -- b.formatting.markdownlint, -- markdown
     -- b.formatting.nginx_beautifier, -- nginx
-    b.formatting.prettier.with {
-        filetypes = {
-            "javascript", "javascriptreact",
-            "typescript", "typescriptreact",
-            "vue", "css", "scss", "less", "html",
-            "json", "jsonc", "yaml",
-        }
-    },
+    -- b.formatting.prettier.with {
+    --     filetypes = {
+    --         "javascript", "javascriptreact",
+    --         "typescript", "typescriptreact",
+    --         "vue", "css", "scss", "less", "html",
+    --         "json", "jsonc", "yaml",
+    --     }
+    -- },
     -- b.formatting.rustfmt, -- rust
-    b.formatting.stylua, -- lua
-    b.formatting.shfmt, -- bash
-    b.formatting.yapf, -- python
+    -- b.formatting.stylua, -- lua
+    -- b.formatting.shfmt, -- bash
+    -- b.formatting.yapf, -- python
 }
 
 null_ls.setup {
