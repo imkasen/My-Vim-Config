@@ -16,10 +16,14 @@ local sources = {
     b.formatting.goimports, -- go import modules
     b.formatting.markdownlint, -- markdown
     -- b.formatting.nginx_beautifier, -- nginx
-    b.formatting.prettier.with { filetypes = {
-        "javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "css", "scss", "less", "html", "json",
-        "jsonc", "yaml",
-    } },
+    b.formatting.prettier.with {
+        filetypes = {
+            "javascript", "javascriptreact",
+            "typescript", "typescriptreact",
+            "vue", "css", "scss", "less", "html",
+            "json", "jsonc", "yaml",
+        }
+    },
     -- b.formatting.rustfmt, -- rust
     b.formatting.stylua, -- lua
     b.formatting.shfmt, -- bash
