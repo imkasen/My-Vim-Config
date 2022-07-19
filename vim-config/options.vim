@@ -63,7 +63,7 @@ set shiftround               " 缩进列数对齐到 shiftwidth 的整数倍
 
 "" 行号
 set number                   " 显示行号
-" set relativenumber           " 显示相对行号
+set relativenumber           " 显示相对行号
 
 "" jkhl 移动时光标周围保留 8 行
 set scrolloff=8
