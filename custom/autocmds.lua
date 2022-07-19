@@ -8,3 +8,9 @@ vim.cmd([[
     \,sm:block-blinkwait175-blinkoff150-blinkon175
   au VimLeave,VimSuspend * set guicursor=a:ver25-blinkwait175-blinkoff150-blinkon175
 ]])
+
+-- 普通模式使用混合行号，插入模式使用绝对行号
+vim.cmd([[
+    autocmd InsertEnter * :set norelativenumber
+    autocmd InsertLeave * :set relativenumber
+]])
