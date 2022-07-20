@@ -25,7 +25,9 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 
+" 插入模式移动到行头
 inoremap <C-b> <Esc>^i
+" 插入模式移动到行尾
 inoremap <C-e> <End>
 
 " 光标在分屏间跳转
@@ -37,5 +39,3 @@ nnoremap <C-l> <C-w>l
 " Buffer 间跳转
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
-
-

@@ -1,13 +1,14 @@
 "" Source your .vimrc
 
-source ~/nvime/vim-config/keymaps.vim
-source ~/nvime/vim-config/options.vim
+source ~/nvime/vimrc/keymaps.vim
+source ~/nvime/vimrc/options.vim
 
 "" =======================================================
 
 "" https://github.com/JetBrains/ideavim/wiki/NERDTree-support
 set NERDTree
-nnoremap <Leader>e :NERDTree<CR>
+nnoremap <C-b> :NERDTreeToggle<CR>
+nnoremap <Leader>e :NERDTreeFocus<CR>
 
 "" https://github.com/JetBrains/ideavim/wiki/Emulated-plugins#commentary=
 set commentary
@@ -22,14 +23,4 @@ nnoremap <Leader>n :action NewFile<CR>
 "" =======================================================
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
-"" Map \r to the Reformat Code action
-"map \r <Action>(ReformatCode)
-
-"" Map <leader>d to start debug
-"map <leader>d <Action>(Debug)
-
-"" Map \b to toggle the breakpoint on the current line
-"map \b <Action>(ToggleLineBreakpoint)
-
-
 " Find more examples here: https://jb.gg/share-ideavimrc
