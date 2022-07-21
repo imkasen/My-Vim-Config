@@ -17,7 +17,7 @@ set ffs=unix,dos,mac         " 文件换行符，默认使用 unix 换行符
 set hidden                   " 终端隐藏后不结束
 set history=50               " 历史记录条数
 set laststatus=2             " 总是显示状态栏
-" set lazyredraw               " 延迟绘制，提升性能
+set lazyredraw               " 延迟绘制，提升性能
 set mouse=n                  " 允许使用鼠标, normal 生效，a 则是全模式生效
 set pumheight=10             " 补全最多显示 10 行
 set ruler                    " 显示光标的位置
@@ -26,8 +26,8 @@ set showmatch                " 显示括号匹配
 set showmode                 " 在最后一行提示消息
 set showtabline=2            " 永远显示 tabline
 set textwidth=120            " 设置行宽
-"  set t_Co=256                 " 启用 256 色
-set termguicolors            " 开启真彩色
+set t_Co=256                 " 启用 256 色
+" set termguicolors            " 开启真彩色
 set wildmenu                 " Vim 自身命令行模式智能补全
 
 set shortmess+=c             " Don't pass messages to |ins-completion-menu|.
