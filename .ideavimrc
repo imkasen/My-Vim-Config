@@ -17,7 +17,7 @@ set commentary
 
 "" IDE Action
 nnoremap <Leader>h :action ActivateTerminalToolWindow<CR>
-nnoremap <Leader>f :action ReformatCode<CR>
+nnoremap <Leader>fm :action ReformatCode<CR>
 nnoremap <Leader>n :action NewFile<CR>
 
 "" =======================================================
