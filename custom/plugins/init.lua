@@ -4,9 +4,18 @@ return {
     --     disable = false,
     -- },
 
+    -- lsp
+    ["neovim/nvim-lspconfig"] = {
+        config = function()
+            require "plugins.configs.lspconfig"
+            require "custom.plugins.lspconfig"
+        end,
+    },
+
     ["wakatime/vim-wakatime"] = {},
 
     ["max397574/better-escape.nvim"] = {
+        event = "InsertEnter",
         config = function()
             require "custom.plugins.better-escape"
         end,
