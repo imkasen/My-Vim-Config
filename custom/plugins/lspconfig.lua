@@ -1,6 +1,5 @@
 -- https://github.com/neovim/nvim-lspconfig
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
--- https://github.com/williamboman/nvim-lsp-installer
 
 local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
@@ -24,7 +23,7 @@ local servers = {
     -- "sqlls",
     "sumneko_lua",
     -- "tailwindcss",
-    "tsserver",
+    -- "tsserver",
     "vimls",
     -- "vuels",
     "yamlls",

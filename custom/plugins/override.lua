@@ -33,6 +33,32 @@ M.treesitter = {
     },
 }
 
+-- https://github.com/williamboman/mason.nvim
+M.mason = {
+    ensure_installed = {
+        -- "asm-lsp",
+        "bash-language-server",
+        "clangd",
+        "cmake-language-server",
+        "css-lsp",
+        "dockerfile-language-server",
+        -- "dot-language-server",
+        "eslint-lsp",
+        "gopls",
+        "html-lsp",
+        "json-lsp",
+        "lua-language-server",
+        "pyright",
+        -- "rust-analyzer",
+        -- "sqlls",
+        -- "tailwindcss-language-server",
+        -- "typescript-language-server",
+        "vim-language-server",
+        -- "vue-language-server",
+        "yaml-language-server",
+    },
+}
+
 M.nvimtree = {
     git = {
         enable = true,
