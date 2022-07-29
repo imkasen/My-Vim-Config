@@ -5,4 +5,11 @@ if not present then
     return
 end
 
-autosave.setup()
+local options = {
+    execution_message = function()
+        return "AutoSave: saved at " .. vim.fn.strftime("%H:%M:%S")
+    end,
+    -- execution_message = "Saved",
+}
+
+autosave.setup(options)
