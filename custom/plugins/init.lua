@@ -10,6 +10,10 @@ return {
 
     ["wakatime/vim-wakatime"] = {},
 
+    ["folke/which-key.nvim"] = {
+        disable = false,
+    },
+
     ["max397574/better-escape.nvim"] = {
         event = "InsertEnter",
         config = function()
