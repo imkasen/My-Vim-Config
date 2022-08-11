@@ -1,6 +1,12 @@
 local M = {}
 
 M.disabled = {
+    i = {
+        -- go to  beginning and end
+        ["<C-b>"] = "",
+        ["<C-e>"] = "",
+    },
+
     n = {
         -- line numbers
         ["<leader>n"] = "",
