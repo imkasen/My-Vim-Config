@@ -10,7 +10,7 @@ M.plugins = {
         ["nvim-treesitter/nvim-treesitter"] = override.treesitter,
         ["kyazdani42/nvim-tree.lua"] = override.nvimtree,
         ["NvChad/ui"] = override.ui,
-        ["williamboman/mason"] = override.mason,
+        ["williamboman/mason.nvim"] = override.mason,
     },
 
     -- add plugins

@@ -23,7 +23,7 @@ NvChad 自定义配置。
 3. 下载 [nvime](https://github.com/imkasen/nvime)
 
    ``` Bash
-   cd && git clone git@github.com:imkasen/nvime.git
+   cd && git clone https://github.com/imkasen/nvime --depth 1
    cd ~/.config/ && rm -rf ./nvim/lua/custom/
    ln -s ~/nvime/custom ./nvim/lua/custom
    ```
