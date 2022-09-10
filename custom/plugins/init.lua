@@ -1,4 +1,24 @@
+local overrides = require "custom.plugins.override"
+
 return {
+
+    ------------------ default plugins ------------------
+
+    ["NvChad/ui"] = {
+        override_options = overrides.ui
+    },
+
+    ["nvim-treesitter/nvim-treesitter"] = {
+        override_options = overrides.treesitter
+    },
+
+    ["kyazdani42/nvim-tree.lua"] = {
+        override_options = overrides.nvimtree
+    },
+
+    ["williamboman/mason.nvim"] = {
+        override_options = overrides.mason
+    },
 
     -- lsp
     ["neovim/nvim-lspconfig"] = {
@@ -7,6 +27,8 @@ return {
             require "custom.plugins.lspconfig"
         end,
     },
+
+    ------------------ custom plugins ------------------
 
     ["wakatime/vim-wakatime"] = {},
 
@@ -21,9 +43,9 @@ return {
         end,
     },
 
-    ["Pocco81/AutoSave.nvim"] = {
+    ["Pocco81/auto-save.nvim"] = {
         config = function()
-            require "custom.plugins.autosave"
+            require("auto-save").setup()
         end,
     },
 
