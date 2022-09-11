@@ -20,7 +20,6 @@ return {
         override_options = overrides.mason
     },
 
-    -- lsp
     ["neovim/nvim-lspconfig"] = {
         config = function()
             require "plugins.configs.lspconfig"
@@ -28,13 +27,13 @@ return {
         end,
     },
 
-    ------------------ custom plugins ------------------
-
-    ["wakatime/vim-wakatime"] = {},
-
     ["folke/which-key.nvim"] = {
         disable = false,
     },
+
+    ------------------ custom plugins ------------------
+
+    ["wakatime/vim-wakatime"] = {},
 
     ["max397574/better-escape.nvim"] = {
         event = "InsertEnter",
