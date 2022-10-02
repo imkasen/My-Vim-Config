@@ -31,7 +31,14 @@ packer.startup({
     function(use)
         -- packer.nvim 可以升级自己
         use("wbthomason/packer.nvim")
+        use("kyazdani42/nvim-web-devicons")
 
+        --------------------- plugins -------------------
+        -- nvim-tree
+        use({
+            "kyazdani42/nvim-tree.lua",
+            requires = "kyazdani42/nvim-web-devicons",
+        })
 
         --------------------- themes --------------------
         use("navarasu/onedark.nvim")
