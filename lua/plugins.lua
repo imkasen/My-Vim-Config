@@ -32,6 +32,11 @@ packer.startup({
         -- packer.nvim 可以升级自己
         use("wbthomason/packer.nvim")
 
+
+        --------------------- themes --------------------
+        use("navarasu/onedark.nvim")
+
+
         -- Automatically set up your configuration after cloning packer.nvim
         -- Put this at the end after all plugins
         if packer_bootstrap then
