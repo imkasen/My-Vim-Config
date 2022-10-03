@@ -46,10 +46,6 @@ keymap("n", "<C-Up>", "<C-w>-", opts)
 keymap("n", "<C-Down>", "<C-w>+", opts)
 keymap("n", "<leader>=", "<C-w>=", opts) -- 相等比例
 
--- Buffer 之间跳转
-keymap("n", "<Tab>", ":bnext<CR>", opts)
-keymap("n", "<S-Tab>", ":bprevious<CR>", opts)
-
 -- very magic 搜索
 keymap("n", "/", "/\\v", { noremap = true, silent = false })
 
@@ -106,7 +102,18 @@ keymap("t", "<ESC>", "<C-\\><C-N>", opts)
 ------------------------------------------------------------------
 local pluginKeys = {}
 
--- nvim-tree
+---- nvim-tree.nvim ----
 keymap("n", "<C-b>", ":NvimTreeToggle<CR>", opts)
+
+---- bufferline.nvim ----
+-- new buffer
+keymap("n", "<leader>b", ":enew<CR>", opts)
+-- cycle through buffers
+-- keymap("n", "<Tab>", ":bnext<CR>", opts)
+-- keymap("n", "<S-Tab>", ":bprevious<CR>", opts)
+keymap("n", "<Tab>", ":BufferLineCycleNext<CR>", opts)
+keymap("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", opts)
+-- close buffer
+keymap("n", "<leader>x", ":bdelete!<CR>", opts)
 
 return pluginKeys

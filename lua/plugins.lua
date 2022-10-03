@@ -39,6 +39,12 @@ packer.startup({
             "kyazdani42/nvim-tree.lua",
             requires = "kyazdani42/nvim-web-devicons",
         })
+        -- bufferline
+        use({
+            'akinsho/bufferline.nvim',
+            tag = "v2.*",
+            requires = 'kyazdani42/nvim-web-devicons',
+        })
 
         --------------------- themes --------------------
         use("navarasu/onedark.nvim")
@@ -54,8 +60,8 @@ packer.startup({
     config = {
         -- 自定义源
         git = {
-            -- default_url_format = "https://github.com/%s",
-            default_url_format = "https://hub.fastgit.xyz/%s",
+            default_url_format = "https://github.com/%s",
+            -- default_url_format = "https://hub.fastgit.xyz/%s",
         },
         display = {
             -- compact = false, -- If true, fold updates results by default
