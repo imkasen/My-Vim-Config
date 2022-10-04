@@ -32,6 +32,7 @@ packer.startup({
         -- packer.nvim 可以升级自己
         use("wbthomason/packer.nvim")
         use("kyazdani42/nvim-web-devicons")
+        use("nvim-lua/plenary.nvim")
 
         --------------------- plugins -------------------
         -- nvim-tree
@@ -51,6 +52,12 @@ packer.startup({
             requires = { "kyazdani42/nvim-web-devicons" },
         })
         use("arkav/lualine-lsp-progress")
+        -- telescope
+        use({
+            "nvim-telescope/telescope.nvim",
+            tag = "0.1.0",
+            requires = { "nvim-lua/plenary.nvim" },
+        })
 
         --------------------- themes --------------------
         use("navarasu/onedark.nvim")
