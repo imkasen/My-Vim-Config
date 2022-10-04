@@ -58,6 +58,8 @@ packer.startup({
             tag = "0.1.0",
             requires = { "nvim-lua/plenary.nvim" },
         })
+        -- dashboard
+        use("glepnir/dashboard-nvim")
 
         --------------------- themes --------------------
         use("navarasu/onedark.nvim")
