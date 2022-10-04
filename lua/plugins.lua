@@ -60,6 +60,8 @@ packer.startup({
         })
         -- dashboard
         use("glepnir/dashboard-nvim")
+        -- project
+        use("ahmedkhalf/project.nvim")
 
         --------------------- themes --------------------
         use("navarasu/onedark.nvim")

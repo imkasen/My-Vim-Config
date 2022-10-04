@@ -15,11 +15,14 @@ local options = {
     git = {
         enable = true,
     },
+    -- Change cwd of nvim-tree to that of new buffer's when opening nvim-tree.
+    respect_buf_cwd = true,
     -- Changes the tree root directory on `DirChanged` and refreshes the tree.
+    -- also required by 'project.nvim'
     sync_root_with_cwd = true,
     update_focused_file = {
         enable = true,
-        update_root = false,
+        update_root = true,
     },
     view = {
         adaptive_size = true,
