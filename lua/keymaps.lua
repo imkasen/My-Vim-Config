@@ -15,9 +15,9 @@ local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 -- 把空格键作为 leader 键
+keymap("", "<Space>", "<NOP>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-keymap("", "<Space>", "<NOP>", opts)
 
 ------------------------------------------------------------------
 -- NORMAL
@@ -49,6 +49,11 @@ keymap("n", "<leader>=", "<C-w>=", opts) -- 相等比例
 -- very magic 搜索
 keymap("n", "/", "/\\v", { noremap = true, silent = false })
 
+-- 上下移动选中文本
+-- https://vim.fandom.com/wiki/Moving_lines_up_or_down
+keymap("n", "<A-j>", ":m .+1<CR>==", opts)
+keymap("n", "<A-k>", ":m .-2<CR>==", opts)
+
 ------------------------------------------------------------------
 -- INSERT
 ------------------------------------------------------------------
@@ -66,6 +71,10 @@ keymap("i", "<C-l>", "<Right>", opts)
 keymap("i", "<C-b>", "<ESC>^i", opts) -- 跳转到行首
 keymap("i", "<C-e>", "<End>", opts) --   跳转到行尾
 
+-- 上下移动选中文本
+keymap("i", "<A-j>", "<Esc>:move .+1<CR>==gi", opts)
+keymap("i", "<A-k>", "<Esc>:move .-2<CR>==gi", opts)
+
 ------------------------------------------------------------------
 -- VISUAL
 ------------------------------------------------------------------
@@ -82,12 +91,23 @@ keymap("v", ">", ">gv", opts)
 keymap("v", "<Backspace>", "x", opts)
 
 -- 上下移动选中文本
--- https://vim.fandom.com/wiki/Moving_lines_up_or_down
-keymap("v", "<A-j>", ":move '>+1<CR>gv-gv", opts)
-keymap("v", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+keymap("v", "<A-j>", ":move '>+1<CR>gv=gv", opts)
+keymap("v", "<A-k>", ":move '<-2<CR>gv=gv", opts)
 
 -- 只粘贴不复制
--- keymap("v", "p", '"_dP', opts)
+keymap("v", "p", '"_dP', opts)
+
+------------------------------------------------------------------
+-- VISUAL BLOCK
+------------------------------------------------------------------
+
+-- 光标单行跳转
+keymap("x", "<S-h>", "^", opts) -- 跳转到行首
+keymap("x", "<S-l>", "$", opts) -- 跳转到行尾
+
+-- 上下移动选中文本
+keymap("x", "<A-j>", ":move '>+1<CR>gv=gv", opts)
+keymap("x", "<A-k>", ":move '<-2<CR>gv=gv", opts)
 
 ------------------------------------------------------------------
 -- TERMINAL
@@ -96,6 +116,11 @@ keymap("v", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- 退出终端
 keymap("t", "<C-x>", "<C-\\><C-N>", opts)
 keymap("t", "<ESC>", "<C-\\><C-N>", opts)
+
+-- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", opts)
+-- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", opts)
+-- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", opts)
+-- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", opts)
 
 ------------------------------------------------------------------
 -- 插件快捷键

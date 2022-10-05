@@ -1,7 +1,7 @@
 -- 基础配置
 require("options")
 -- 快捷键映射
-require("mappings")
+require("keymaps")
 -- 插件管理
 require("plugins")
 -- 主题设置

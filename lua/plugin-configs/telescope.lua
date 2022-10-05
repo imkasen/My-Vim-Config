@@ -28,7 +28,7 @@ local options = {
             "truncate",
         },
         -- 窗口内快捷键
-        mappings = require("mappings").telescopeList,
+        mappings = require("keymaps").telescopeList,
     },
 }
 

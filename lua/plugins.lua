@@ -1,7 +1,7 @@
 -- 插件配置
 
 -- 自动安装 [packer.nvim](https://github.com/wbthomason/packer.nvim)
--- ~/.local/share/nvim/site/pack/packer/
+-- ~/.local/share/nvim/
 local fn = vim.fn
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 local packer_bootstrap
@@ -26,43 +26,62 @@ if not status_ok then
     return
 end
 
+local configs = {
+    -- 自定义源
+    git = {
+        default_url_format = "https://github.com/%s",
+        -- default_url_format = "https://hub.fastgit.xyz/%s",
+    },
+    display = {
+        -- 使用浮动窗口显示
+        open_fn = function()
+            return require("packer.util").float({ border = "rounded" })
+        end,
+        autoremove = true, -- Remove disabled or unused plugins without prompting the user
+    },
+}
+
 -- Install your plugins here
-packer.startup({
+local options = {
     function(use)
-        -- packer.nvim 可以升级自己
+        -- Have packer manage itself
         use("wbthomason/packer.nvim")
+        -- icons
         use("kyazdani42/nvim-web-devicons")
+        -- An implementation of the Popup API from vim in Neovim
+        use("nvim-lua/popup.nvim")
+        -- Useful lua functions used ny lots of plugins
         use("nvim-lua/plenary.nvim")
 
         --------------------- plugins -------------------
-        -- nvim-tree
+        -- nvim-tree.lua
         use({
             "kyazdani42/nvim-tree.lua",
             requires = { "kyazdani42/nvim-web-devicons" },
         })
-        -- bufferline
+        -- bufferline.nvim
         use({
             'akinsho/bufferline.nvim',
             tag = "v2.*",
             requires = { 'kyazdani42/nvim-web-devicons' },
         })
-        -- lualine
+        -- lualine.nvim
         use({
             "nvim-lualine/lualine.nvim",
             requires = { "kyazdani42/nvim-web-devicons" },
         })
         use("arkav/lualine-lsp-progress")
-        -- telescope
+        -- telescope.nvim
         use({
             "nvim-telescope/telescope.nvim",
             tag = "0.1.0",
             requires = { "nvim-lua/plenary.nvim" },
         })
-        -- dashboard
+        -- dashboard-nvim
         use("glepnir/dashboard-nvim")
-        -- project
+        -- project.nvim
         use("ahmedkhalf/project.nvim")
-        -- treesitter
+        -- nvim-treesitter
         use({
             "nvim-treesitter/nvim-treesitter",
             run = function()
@@ -82,21 +101,7 @@ packer.startup({
             require("packer").sync()
         end
     end,
+}
 
-    config = {
-        -- 自定义源
-        git = {
-            default_url_format = "https://github.com/%s",
-            -- default_url_format = "https://hub.fastgit.xyz/%s",
-        },
-        display = {
-            -- compact = false, -- If true, fold updates results by default
-            -- 使用浮动窗口显示
-            open_fn = function()
-                return require("packer.util").float({ border = "single" })
-            end,
-            -- show_all_info = true, -- Should packer show all update details automatically?
-            autoremove = true, -- Remove disabled or unused plugins without prompting the user
-        },
-    },
-})
+packer.init(configs)
+packer.startup(options)

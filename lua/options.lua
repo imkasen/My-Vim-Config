@@ -13,7 +13,7 @@ local g = vim.g
 
 local options = {
     title = true,
-    -- 在处理未保存或只读文件时，弹出确认提示
+    -- 在处理未保存或只读文件时，是否需要确认
     confirm = true,
     -- 有错误信息时不响铃
     errorbells = false,
@@ -97,10 +97,10 @@ local options = {
     swapfile = false,
     undofile = false,
 
-    -- smaller updatetime
-    updatetime = 250,
-    -- 设置 timeoutlen 为等待键盘快捷键连击时间 400 毫秒，可根据需要设置
-    timeoutlen = 400,
+    -- faster completion (4000ms default)
+    updatetime = 300,
+    -- time to wait for a mapped sequence to complete (in milliseconds)
+    timeoutlen = 500,
 
     -- split window 从下边和右边出现
     splitbelow = true,
@@ -138,4 +138,7 @@ opt.shortmess:append 'c'
 
 -- go to previous/next line with hlleft arrow and right arrow
 -- when cursor reaches end/beginning of line
-opt.whichwrap:append "<>[]hl"
+opt.whichwrap:append "<,>,[,],h,l"
+
+-- recognize 'xx-xx' as a whole word when using 'dw/cw..' cmd
+opt.iskeyword:append "-,_"
