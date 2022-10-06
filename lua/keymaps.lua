@@ -168,6 +168,12 @@ pluginKeys.telescopeList = {
 
 ---- nvim-cmp ----
 pluginKeys.cmp = function(cmp)
+    local snip_status_ok, luasnip = pcall(require, "luasnip")
+    if not snip_status_ok then
+        vim.notify("Can not find 'luasnip'!")
+        return
+    end
+
     local check_backspace = function()
         local col = vim.fn.col "." - 1
         return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
