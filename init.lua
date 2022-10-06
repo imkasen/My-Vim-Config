@@ -16,3 +16,5 @@ require("plugin-configs.telescope")
 require("plugin-configs.dashboard")
 require("plugin-configs.project")
 require("plugin-configs.nvim-treesitter")
+-- 补全
+require("plugin-configs.cmp")

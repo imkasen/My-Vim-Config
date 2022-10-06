@@ -91,6 +91,24 @@ local options = {
             end,
         })
 
+        --------------------- completions --------------------
+        -- The completion plugin
+        use("hrsh7th/nvim-cmp")
+        -- buffer completions
+        use("hrsh7th/cmp-buffer")
+        -- path completions
+        use("hrsh7th/cmp-path")
+        -- cmdline completions
+        use("hrsh7th/cmp-cmdline")
+        -- snippet completions
+        use("saadparwaiz1/cmp_luasnip")
+
+        --------------------- snippets --------------------
+        -- snippet engine
+        use("L3MON4D3/LuaSnip")
+        -- a bunch of snippets to use
+        use("rafamadriz/friendly-snippets")
+
         --------------------- themes --------------------
         use("navarasu/onedark.nvim")
 
