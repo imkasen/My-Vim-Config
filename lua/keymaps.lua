@@ -228,4 +228,24 @@ pluginKeys.cmp = function(cmp)
     }
 end
 
+---- LSP ----
+pluginKeys.mapLSP = function(mapBuf)
+    mapBuf("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
+    mapBuf("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
+    mapBuf("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
+    mapBuf("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
+    mapBuf("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
+    mapBuf("n", "gk", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts)
+    mapBuf("n", "gj", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)
+    mapBuf("n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
+    mapBuf("n", "<leader>D", "<cmd>lua vim.lsp.buf.type_definition()<CR>", opts)
+    mapBuf("n", "<leader>f", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
+    mapBuf("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
+    mapBuf("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
+    mapBuf("n", "<leader>sl", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
+    mapBuf("n", "<leader>fm", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
+    -- mapBuf("n", "<leader>li", "<cmd>LspInfo<cr>", opts)
+    -- mapBuf("n", "<leader>lI", "<cmd>LspInstallInfo<cr>", opts)
+end
+
 return pluginKeys

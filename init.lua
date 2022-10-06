@@ -18,3 +18,5 @@ require("plugin-configs.project")
 require("plugin-configs.nvim-treesitter")
 -- 补全
 require("plugin-configs.cmp")
+-- LSP
+require("lsp")

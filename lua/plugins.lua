@@ -91,6 +91,12 @@ local options = {
             end,
         })
 
+        --------------------- LSP --------------------
+        -- enable LSP
+        use("neovim/nvim-lspconfig")
+        -- simple to use language server installer
+        use("williamboman/nvim-lsp-installer")
+
         --------------------- completions --------------------
         -- The completion plugin
         use("hrsh7th/nvim-cmp")
@@ -102,6 +108,8 @@ local options = {
         use("hrsh7th/cmp-cmdline")
         -- snippet completions
         use("saadparwaiz1/cmp_luasnip")
+        use("hrsh7th/cmp-nvim-lsp")
+        use("hrsh7th/cmp-nvim-lua")
 
         --------------------- snippets --------------------
         -- snippet engine
