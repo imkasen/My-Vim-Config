@@ -96,6 +96,8 @@ local options = {
         use("windwp/nvim-autopairs")
         -- Comment.nvim
         use("numToStr/Comment.nvim")
+        -- gitsign.nvim
+        use("lewis6991/gitsigns.nvim")
 
         --------------------- LSP --------------------
         -- enable LSP
