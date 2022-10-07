@@ -17,6 +17,7 @@ require("plugin-configs.dashboard")
 require("plugin-configs.project")
 require("plugin-configs.treesitter")
 require("plugin-configs.autopairs")
+require("plugin-configs.comment")
 -- 补全
 require("plugin-configs.cmp")
 -- LSP

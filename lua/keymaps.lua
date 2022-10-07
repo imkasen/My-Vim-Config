@@ -127,6 +127,14 @@ keymap("t", "<ESC>", "<C-\\><C-N>", opts)
 ------------------------------------------------------------------
 local pluginKeys = {}
 
+---- Comment.nvim ----
+-- ctrl + /
+-- keymap("n", "<C-_>", "gcc", { noremap = false })
+-- keymap("v", "<C-_>", "gcc", { noremap = false })
+
+keymap("n", "<leader>/", "gcc", { noremap = false })
+keymap("v", "<leader>/", "gcc", { noremap = false })
+
 ---- nvim-tree.nvim ----
 keymap("n", "<C-b>", ":NvimTreeToggle<CR>", opts)
 

@@ -90,9 +90,12 @@ local options = {
                 })
             end,
         })
-        use "p00f/nvim-ts-rainbow"
+        use("p00f/nvim-ts-rainbow")
+        -- use('JoosepAlviste/nvim-ts-context-commentstring')
         -- nvim-autopairs
         use("windwp/nvim-autopairs")
+        -- Comment.nvim
+        use("numToStr/Comment.nvim")
 
         --------------------- LSP --------------------
         -- enable LSP
