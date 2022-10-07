@@ -91,6 +91,8 @@ local options = {
             end,
         })
         use "p00f/nvim-ts-rainbow"
+        -- nvim-autopairs
+        use("windwp/nvim-autopairs")
 
         --------------------- LSP --------------------
         -- enable LSP
