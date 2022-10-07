@@ -36,6 +36,7 @@ A Lua configuration of NeoVim.
       <ul>
          <li><a href="https://github.com/wbthomason/packer.nvim">packer.nvim</a></li>
          <li><a href="https://github.com/kyazdani42/nvim-web-devicons">nvim-web-devicons</a></li>
+         <li><a href="https://github.com/nvim-lua/popup.nvim">popup.nvim</a></li>
          <li><a href="https://github.com/nvim-lua/plenary.nvim">plenary.nvim</a></li>
       </ul>
 </details>
@@ -52,6 +53,36 @@ A Lua configuration of NeoVim.
          <li><a href="https://github.com/glepnir/dashboard-nvim">dashboard.nvim</a></li>
          <li><a href="https://github.com/ahmedkhalf/project.nvim">project.nvim</a></li>
          <li><a href="https://github.com/nvim-treesitter/nvim-treesitter">nvim-treesitter</a></li>
+            <ul>
+               <li><a href="https://github.com/p00f/nvim-ts-rainbow">nvim-ts-rainbow</a></li>
+            </ul>
+         <li><a href="https://github.com/windwp/nvim-autopairs">nvim-autopairs</a></li>
+      </ul>
+</details>
+<details>
+   <summary>LSP</summary>
+      <ul>
+         <li><a href="https://github.com/neovim/nvim-lspconfig">nvim-lspconfig</a></li>
+         <li><a href="https://github.com/williamboman/nvim-lsp-installer">nvim-lsp-installer</a></li>
+      </ul>
+</details>
+<details>
+   <summary>Completions</summary>
+      <ul>
+         <li><a href="https://github.com/hrsh7th/nvim-cmp">nvim-cmp</a></li>
+         <li><a href="https://github.com/hrsh7th/cmp-buffer">cmp-buffer</a></li>
+         <li><a href="https://github.com/hrsh7th/cmp-path">cmp-path</a></li>
+         <li><a href="https://github.com/hrsh7th/cmp-cmdline">cmp-cmdline</a></li>
+         <li><a href="https://github.com/saadparwaiz1/cmp_luasnip">cmp_luasnip</a></li>
+         <li><a href="https://github.com/hrsh7th/cmp-nvim-lsp">cmp-nvim-lsp</a></li>
+         <li><a href="https://github.com/hrsh7th/cmp-nvim-lua">cmp-nvim-lua</a></li>
+      </ul>
+</details>
+<details>
+   <summary>Snippets</summary>
+      <ul>
+         <li><a href="https://github.com/L3MON4D3/LuaSnip">LuaSnip</a></li>
+         <li><a href="https://github.com/rafamadriz/friendly-snippets">friendly-snippets</a></li>
       </ul>
 </details>
 <details>

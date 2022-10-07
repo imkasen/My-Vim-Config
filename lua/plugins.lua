@@ -50,7 +50,7 @@ local options = {
         use("kyazdani42/nvim-web-devicons")
         -- An implementation of the Popup API from vim in Neovim
         use("nvim-lua/popup.nvim")
-        -- Useful lua functions used ny lots of plugins
+        -- Useful lua functions used by lots of plugins
         use("nvim-lua/plenary.nvim")
 
         --------------------- plugins -------------------
@@ -90,6 +90,7 @@ local options = {
                 })
             end,
         })
+        use "p00f/nvim-ts-rainbow"
 
         --------------------- LSP --------------------
         -- enable LSP

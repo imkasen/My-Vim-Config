@@ -16,10 +16,10 @@ end
 -- use existing vs-code style snippets
 require("luasnip.loaders.from_vscode").lazy_load()
 
--- local check_backspace = function()
---     local col = vim.fn.col "." - 1
---     return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
--- end
+local check_backspace = function()
+    local col = vim.fn.col "." - 1
+    return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
+end
 
 --   פּ ﯟ   some other good icons
 local kind_icons = {
@@ -58,7 +58,7 @@ local options = {
         end,
     },
     -- 快捷键
-    mapping = require("keymaps").cmp(cmp),
+    mapping = require("keymaps").cmp(cmp, luasnip, check_backspace),
     formatting = {
         fields = { "kind", "abbr", "menu" },
         format = function(entry, vim_item)

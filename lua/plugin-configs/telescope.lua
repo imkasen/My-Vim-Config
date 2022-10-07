@@ -12,20 +12,19 @@ local options = {
     defaults = {
         prompt_prefix = "   ",
         sorting_strategy = "ascending",
-        -- vertical, center, cursor
         layout_strategy = "horizontal",
         layout_config = {
             horizontal = {
                 prompt_position = "top",
-                preview_width = 0.55,
+                preview_width = 0.6,
                 results_width = 0.8,
             },
-            width = 0.87,
-            height = 0.80,
+            width = 0.9,
+            height = 0.8,
             preview_cutoff = 120,
         },
         path_display = {
-            "truncate",
+            "smart",
         },
         -- 窗口内快捷键
         mappings = require("keymaps").telescopeList,

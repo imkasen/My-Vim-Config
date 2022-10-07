@@ -146,7 +146,7 @@ keymap("n", "<leader>x", ":bdelete!<CR>", opts)
 keymap("n", "<C-p>", ":Telescope find_files<CR>", opts)
 -- 全局搜索
 keymap("n", "<S-f>", ":Telescope live_grep<CR>", opts)
--- Telescope 列表中 插入模式快捷键
+-- Telescope 插入模式快捷键
 pluginKeys.telescopeList = {
     i = {
         -- 上下移动
@@ -167,18 +167,7 @@ pluginKeys.telescopeList = {
 }
 
 ---- nvim-cmp ----
-pluginKeys.cmp = function(cmp)
-    local snip_status_ok, luasnip = pcall(require, "luasnip")
-    if not snip_status_ok then
-        vim.notify("Can not find 'luasnip'!")
-        return
-    end
-
-    local check_backspace = function()
-        local col = vim.fn.col "." - 1
-        return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
-    end
-
+pluginKeys.cmp = function(cmp, luasnip, check_backspace)
     return {
         ["<C-k>"] = cmp.mapping.select_prev_item(),
         ["<C-j>"] = cmp.mapping.select_next_item(),
