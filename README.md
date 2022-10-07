@@ -57,6 +57,8 @@ A Lua configuration of NeoVim.
                <li><a href="https://github.com/p00f/nvim-ts-rainbow">nvim-ts-rainbow</a></li>
             </ul>
          <li><a href="https://github.com/windwp/nvim-autopairs">nvim-autopairs</a></li>
+         <li><a href="https://github.com/numToStr/Comment.nvim">Comment.nvim</a></li>
+         <li><a href="https://github.com/lewis6991/gitsigns.nvim">gitsigns.nvim</a></li>
       </ul>
 </details>
 <details>

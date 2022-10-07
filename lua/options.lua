@@ -46,6 +46,8 @@ local options = {
     pumheight = 10,
     -- TUI 开启真彩色
     termguicolors = true,
+    textwidth = 120,
+    history = 50,
 
     -- -- utf8
     encoding = "UTF-8",
@@ -95,7 +97,6 @@ local options = {
     backup = false,
     writebackup = false,
     swapfile = false,
-    undofile = false,
 
     -- faster completion (4000ms default)
     updatetime = 300,
@@ -109,7 +110,6 @@ local options = {
     -- 不可见字符的显示，这里只把空格显示为一个点
     list = true,
     listchars = "space:·,tab:-->",
-    -- fillchars = { eob = " " },
 
     -- 永远显示 tabline
     showtabline = 2,
@@ -141,4 +141,4 @@ opt.shortmess:append 'c'
 opt.whichwrap:append "<,>,[,],h,l"
 
 -- recognize 'xx-xx' as a whole word when using 'dw/cw..' cmd
-opt.iskeyword:append "-,_"
+-- opt.iskeyword:append "-"

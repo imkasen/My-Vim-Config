@@ -51,8 +51,8 @@ keymap("n", "/", "/\\v", { noremap = true, silent = false })
 
 -- 上下移动选中文本
 -- https://vim.fandom.com/wiki/Moving_lines_up_or_down
-keymap("n", "<A-j>", ":m .+1<CR>==", opts)
-keymap("n", "<A-k>", ":m .-2<CR>==", opts)
+keymap("n", "<A-j>", ":move .+1<CR>==", opts)
+keymap("n", "<A-k>", ":move .-2<CR>==", opts)
 
 ------------------------------------------------------------------
 -- INSERT

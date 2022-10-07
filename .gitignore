@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux,vim,visualstudiocode,jetbrains+all
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux,vim,visualstudiocode,jetbrains+all
+# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux,vim,visualstudiocode,jetbrains+all,lua
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux,vim,visualstudiocode,jetbrains+all,lua
 
 plugin
 
@@ -106,6 +106,49 @@ fabric.properties
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
+### Lua ###
+# Compiled Lua sources
+luac.out
+
+# luarocks build files
+*.src.rock
+*.zip
+*.tar.gz
+
+# Object files
+*.o
+*.os
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+*.def
+*.exp
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+
 ### macOS ###
 # General
 .DS_Store
@@ -210,4 +253,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,vim,visualstudiocode,jetbrains+all
+# End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,vim,visualstudiocode,jetbrains+all,lua
