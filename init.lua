@@ -19,6 +19,7 @@ require("plugin-configs.treesitter")
 require("plugin-configs.autopairs")
 require("plugin-configs.comment")
 require("plugin-configs.gitsigns")
+require("plugin-configs.indent-blankline")
 -- 补全
 require("plugin-configs.cmp")
 -- LSP

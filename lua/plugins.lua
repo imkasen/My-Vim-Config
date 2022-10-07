@@ -98,6 +98,8 @@ local options = {
         use("numToStr/Comment.nvim")
         -- gitsign.nvim
         use("lewis6991/gitsigns.nvim")
+        -- indent-blankline
+        use("lukas-reineke/indent-blankline.nvim")
 
         --------------------- LSP --------------------
         -- enable LSP
