@@ -67,6 +67,7 @@ A Lua configuration of NeoVim.
       <ul>
          <li><a href="https://github.com/neovim/nvim-lspconfig">nvim-lspconfig</a></li>
          <li><a href="https://github.com/williamboman/nvim-lsp-installer">nvim-lsp-installer</a></li>
+         <li><a href="https://github.com/jose-elias-alvarez/null-ls.nvim">null-ls.nvim</a></li>
       </ul>
 </details>
 <details>

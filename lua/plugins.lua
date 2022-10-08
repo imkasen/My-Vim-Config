@@ -106,6 +106,8 @@ local options = {
         use("neovim/nvim-lspconfig")
         -- simple to use language server installer
         use("williamboman/nvim-lsp-installer")
+        -- for formatters and linters
+        use("jose-elias-alvarez/null-ls.nvim")
 
         --------------------- completions --------------------
         -- The completion plugin
